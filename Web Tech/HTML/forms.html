@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Fill this form</legend>
+      <form>
+        <label for="username">Username: </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter user Name "
+        />
+
+        <br />
+
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+
+        <br />
+
+        <label for="pswd">Password</label>
+        <input
+          type="password"
+          name="pswd"
+          id="pswd"
+          placeholder="Enter your password"
+        />
+
+        <br />
+        <label for="dob">DateOfBirth</label>
+        <input type="date" name="dob" id="dob" />
+
+        <br />
+        <label for="gender">Gender: </label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female" />
+
+        <br />
+
+        <label for="country">Country: </label>
+        <select name="country" id="country">
+          <option value="" disabled selected>Select a country</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="China">China</option>
+        </select>
+
+        <br />
+        <p>To make a drop down with suggestions we use datalist tag</p>
+
+        <strong>
+          <label for="courses: ">Courses</label>
+          <input type="text" name="Courses" id="Courses" list="sub" />
+          <datalist id="sub">
+            <option value="MERN">MERN</option>
+            <option value="Python Full Stack">Python Full Stack</option>
+            <option value="Java Full Stack">Java Full Stack</option>
+          </datalist>
+        </strong>
+
+        <br /><br />
+
+        <label for="resume">Resume: </label>
+        <input type="file" name="resume" id="resume" multiple />
+
+        <br />
+
+        <label for="address">Address: </label>
+        <textarea name="address" id="address"></textarea>
+
+        <br />
+
+        <label for="hobbies">Hobbies: </label>
+        <label for="coding">Coding</label>
+        <input type="checkbox" name="hobbies" id="coding" value="coding" />
+        <label for="dance">Dance</label>
+        <input type="checkbox" name="hobbies" id="dance" value="dance" />
+
+        <br />
+
+        <label for="phone">Phone No</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          maxlength="10"
+          minlength="10"
+        />
+
+        <br />
+
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time" />
+
+        <br />
+
+        <label for="color">color: </label>
+        <input type="color" name="color" id="color" />
+
+        <br />
+
+        <label for="week">Week</label>
+        <input type="week" name="week" id="week" />
+
+        <br />
+
+        <br /><br /><button type="submit">Submit</button>
+        <input type="submit" value="Submit" />
+      </form>
+    </fieldset>
+
+    <br /><br />
+
+    <h2>Forms using Table</h2>
+
+    <form>
+      <table border="1" cellpadding="10">
+        <tr>
+          <td><label for="username">Username</label></td>
+          <td><input type="text" name="username" id="username" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email: </label></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="pswd">Password</label></td>
+          <td>
+            <input
+              type="password"
+              name="pswd"
+              id="pswd"
+              placeholder="Enter your password"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="dob">DateOfBirth</label></td>
+          <td><input type="date" name="dob" id="dob" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="gender">Gender: </label></td>
+          <td>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="country">Country: </label></td>
+          <td>
+            <select name="country" id="country">
+              <option value="" disabled selected>Select a country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="China">China</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="courses: ">Courses</label></td>
+          <td>
+            <input type="text" name="Courses" id="Courses" list="sub" />
+            <datalist id="sub">
+              <option value="MERN">MERN</option>
+              <option value="Python Full Stack">Python Full Stack</option>
+              <option value="Java Full Stack">Java Full Stack</option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="resume">Resume: </label></td>
+          <td><input type="file" name="resume" id="resume" multiple /></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address: </label></td>
+          <td><textarea name="address" id="address"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="hobbies">Hobbies: </label></td>
+          <td>
+            <label for="coding">Coding</label>
+            <input type="checkbox" name="hobbies" id="coding" value="coding" />
+            <label for="dance">Dance</label>
+            <input type="checkbox" name="hobbies" id="dance" value="dance" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone">Phone No</label>
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              maxlength="10"
+              minlength="10"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="time">Time</label></td>
+          <td><input type="time" name="time" id="time" /></td>
+        </tr>
+        <tr>
+          <td><label for="color">color: </label></td>
+          <td><input type="color" name="color" id="color" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="week">Week</label></td>
+          <td><input type="week" name="week" id="week" /></td>
+        </tr>
+        <tr>
+          <th colspan="2"><button type="submit">Submit</button></th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

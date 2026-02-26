@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p::first-letter {
+        font-size: 80px;
+      }
+      p::first-line {
+        color: red;
+      }
+      p::selection {
+        background-color: lightblue;
+        color: darkblue;
+      }
+      /*ul::marker{color: red;}*/
+      ::marker {
+        color: red;
+      }
+      h1::before {
+        content: "😍";
+        font-size: 50px;
+      }
+      h1::after {
+        content: "💕";
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>LEARN PSUEDO ELEMENT SELECTOR</h1>
+
+    <!-- 
+    ::first-letter
+    ::first-line
+    ::selection
+    ::marker
+    ::after
+    ::before
+     -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
+      blanditiis quidem optio hic similique iure praesentium sapiente eligendi
+      ad officiis laborum illum totam maxime veritatis numquam non, mollitia
+      commodi unde dicta harum. Unde accusantium, optio consequatur rem ut alias
+      perspiciatis accusamus ea molestias consequuntur. Reiciendis odio
+      consequuntur quo harum, dolore quisquam reprehenderit, doloribus dicta
+      nemo numquam accusamus aliquid culpa beatae, debitis est nihil?
+      Voluptatibus eveniet soluta at quos explicabo debitis optio iste veritatis
+      incidunt similique magnam aliquid perferendis nobis a corporis temporibus
+      eligendi, reiciendis labore dolorem sapiente. Sapiente fugit voluptates
+      repellendus in assumenda itaque excepturi adipisci quibusdam accusamus
+      illum!
+    </p>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+  </body>
+</html>

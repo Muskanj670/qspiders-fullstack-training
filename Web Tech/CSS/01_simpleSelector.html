@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Selector</title>
+    <style>
+        *{
+            color: red;
+        }
+      #heading1 {
+        background-color: yellow;
+      }
+      .content {
+        background-color: aqua;
+      }
+      .text {
+        font-family: cursive;
+      }
+      h6 {
+        background-color: lightblue;
+      }
+      header,article,footer{
+        background-color: lightgreen;
+      }
+      #head,.wrapper,footer{
+        font-family: fantasy;
+      }
+    </style>
+  </head>
+  <body>
+    <details>
+      <summary><h1>Types of Simple Selectors</h1></summary>
+      <ul>
+        <li>ID: used to target element uniquely, represented as '#'.</li>
+        <li>
+          Class: Used to target multiple element or different element,
+          represented as '.'.
+        </li>
+        <li>
+          Element: Used to target multiple same type of element, represented as
+          tagName.
+        </li>
+        <li>Group: Used to Group multiple elements, represented as ','.</li>
+        <li>
+          Universal: Used to target all elements in HTML, represented as '*'.
+        </li>
+      </ul>
+    </details>
+
+    <h1 id="heading1">Target me using ID</h1>
+    <div class="content">Target me using CLASSNAME</div>
+    <div class="content">Target me using CLASSNAME</div>
+    <section class="content text">Target me using CLASSNAME</section>
+
+    <h6>Target me using tagname</h6>
+    <h6>Target me using tagname</h6>
+    <h6>Target me using tagname</h6>
+
+    <header id="head">Target me using Group.</header>
+    <article class="wrapper">Target me using Group.</article>
+    <footer>Target me using Group.</footer>
+  </body>
+</html>

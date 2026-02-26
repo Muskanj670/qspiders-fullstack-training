@@ -1,0 +1,6 @@
+Logical operator: 
+a. Logical AND(and): It takes 2 boolean operands and it will return True if both operands will be True.
+        Note: It executes 2nd operand only if first operand is True. Second operand will not be executed in case first operand is False.
+b. Logical OR(or): It takes 2 boolean operands and it will return False if both operands will be False.
+        Note: It executes 2nd operand only if first operand is False. Second operand will not be executed in case first operand is True.
+c. Logical NOT(not): 

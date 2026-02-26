@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selector</title>
+    <style>
+        /* Decendent */
+      section div {
+        background-color: yellow; 
+      }
+      /* Child */
+      section > div{
+        background-color: blue;
+      }
+      /* General Child */
+      section ~ div{
+        background-color: lightblue;
+      }
+
+      /* Adjacent Sibling */
+      section + div{
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <details>
+      <summary>Types of Combinator Selector</summary>
+      <ol>
+        <li>Decendent: Target child as well as nested child, separated by space</li>
+        <li>Child: Target only child, represented by ">".</li>
+        <li>General Sibling:Target all siblings after closing tag, represented by (~)</li>
+        <li>Adjacent Sibling: Target Sibling just after the closing tag. represented by (+)</li>
+      </ol>
+    </details>
+
+    <div>Div 0</div>
+    <section>
+      <div>Div 1</div>
+      <div>Div 2</div>
+      <article>
+        <div>Div 3</div>
+        <div>Div 4</div>
+      </article>
+      <div>Div 5</div>
+    </section>
+    <div>Div 6</div>
+    <div>Div 7</div>
+    <aside>Aside 1</aside>
+    <div>Div 8</div>
+  </body>
+</html>

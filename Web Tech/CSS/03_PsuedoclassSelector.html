@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      a:link {
+        color: aqua;
+      }
+      a:visited {
+        color: black;
+      }
+      a:active {
+        color: yellow;
+      }
+      h1:active {
+        background-color: red;
+        user-select: none;
+      }
+      button:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      button:active {
+        background-color: white;
+        color: black;
+      }
+      ol > li:first-child {
+        background-color: orange;
+      }
+      ol > li:last-child {
+        background-color: greenyellow;
+      }
+      ol > li:nth-child(2) {
+        background-color: blue;
+      }
+
+      section > h3:first-of-type {
+        background-color: yellow;
+      }
+      section > h3:last-of-type {
+        background-color: red;
+      }
+      section > h3:nth-of-type(2) {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>LEARNING PSUEDO CLASS SELECTOR</h1>
+    <details>
+      <summary>Types of Psuedo Class Selector</summary>
+      <ul>
+        <li>:link---to change color of the link</li>
+        <li>
+          :active---to change the color of the link when its active that means
+          when cursor touches it
+        </li>
+        <li>:visited---to change the color of the visited link</li>
+        <li>:first-of-type</li>
+        <li>:last-of-type</li>
+        <li>:nth-of-type()</li>
+        <li>:first-child</li>
+        <li>:last-child</li>
+        <li>:nth-child()</li>
+      </ul>
+    </details>
+
+    <br><br>
+
+    <a href="https://www.zara.com">Zara</a>
+    <a href="https://www.flipkart.com">Flipkart</a>
+    <a href="./demo.html">Demo</a>
+    <button>Submit</button>
+
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+
+    <section>
+      <article>I am Article</article>
+      <h3>I am H3</h3>
+      <aside>I am Aside</aside>
+      <h3>I am H3</h3>
+      <article>I am Article</article>
+      <h3>I am H3</h3>
+      <aside>I am Aside</aside>
+    </section>
+  </body>
+</html>
