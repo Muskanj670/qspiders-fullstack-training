@@ -1,0 +1,8 @@
+# Join(): it is a inbuilt function which is used to merge entities using glue-string
+# syntax - 'gluestring'.join(var)
+
+
+# Title(): it is a inbuilt fun which is used to capitalize first letter after every space 
+
+
+# if a function contains atleast one written then function calling will be done in the presence of print 
