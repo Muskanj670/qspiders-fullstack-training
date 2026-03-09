@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        font-size: 50px;
+      }
+      .box2 {
+        width: 50vw;
+        height: 50vh;
+        background-color: lightcoral;
+        font-size: 5vh;
+      }
+      .parent {
+        width: 40vw;
+        height: 40vh;
+        background-color: lightgreen;
+      }
+      .child {
+        width: 50%;
+        height: 50%;
+        background-color: lightcoral;
+      }
+      .box3 {
+        width: 20em;
+        height: 10em;
+        background-color: lightgreen;
+        font-size: 20px;
+      }
+      .box4 {
+        width: 10rem;
+        height: 10rem;
+        background-color: lightcoral;
+      }
+      html {
+        font-size: 18px;
+      }
+
+      /* or */
+
+      :root {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Types of units in CSS</h1>
+      <ol>
+        <li>px -- Fixed/ Absolute units (1 inch divided by 96)</li>
+        <li>% -- Relative units</li>
+        <li>vh/vw -- Relative units</li>
+        <li>
+          em -- Relative units (by default 1em == 16px, but it depends on the
+          font size of the element)
+        </li>
+        <li>
+          rem -- Relative units (by default 1rem == 16px, but it depends on the
+          font size of the root element)
+        </li>
+      </ol>
+    </header>
+
+    <div class="box1">Pixels</div>
+    <div class="box2">Viewport height/ viewport width</div>
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+
+    <div class="box3">em unit</div>
+    <div class="box4">rem unit</div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      :root {
+        --bgColor: lightcoral; /*Global Variable*/
+      }
+      .box1 {
+        --textColor: white; /*local Variable*/
+        width: 200px;
+        height: 200px;
+        font-size: 30px;
+        color: var(--textColor);
+        background-color: var(--bgColor);
+      }
+      .box2 {
+        width: 400px;
+        height: 200px;
+        background-color: var(--bgColor);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn CSS Variables</h1>
+    <div class="box1">Lorem ipsum dolor sit amet.</div>
+    <br />
+    <div class="box2"></div>
+  </body>
+</html>
