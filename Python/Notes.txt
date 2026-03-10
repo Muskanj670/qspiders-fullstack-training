@@ -6,3 +6,18 @@
 
 
 # if a function contains atleast one written then function calling will be done in the presence of print 
+ 
+
+#Actual arguments: while creating the function the arguments which we pass are known as actual arguments.
+#Formal Arguments: The arguments passed while calling the function those arguments are known as formal arguments.
+
+**To run a function actual arguments should be equal to formal argument. If not then we'll get a error like missing or positional
+
+#Passing default values: A function runnable when actual argument is equal to formal if not it will through sysntax error, to overcome syntax error we use passing default values. In this phenomenon the actual argument contains mandatory, non-mandatory arguments.
+***syntax***: def fun(a,b,c....k1 = v1, k2 = v2, .....):
+                    logic
+            fun(val1,val2.... , v1,v2...(optional))
+
+***Example***: def sum(a,b,c=0):
+                    print(a+b+c)
+                sum()
