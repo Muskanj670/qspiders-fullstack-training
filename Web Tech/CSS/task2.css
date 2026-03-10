@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 380px;
+    width: 330px;
+    box-shadow: 0 0 6px 5px lightgray;
+    padding: 15px;
+}
+.card .profile{
+    height: 65%;
+    border-radius: 10px;
+}
+.card .profile img{
+    height: 100%;
+    width: 100%;
+}
+.card .info h3{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.card .info p{
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.card .info button{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(29, 29, 116);
+    color: white;
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 14px;
+}

@@ -1,0 +1,8 @@
+**Box Model**: 
+1. According to this rule if we write anything it will be wrapped inside a rectangular box.
+2. It has 4 major parts:
+  a. Margin box
+  b. Border box
+  c. Padding Box
+  d. Content box
+3. Box model rule was introduced in css-3.
