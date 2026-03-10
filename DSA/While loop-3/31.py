@@ -1,2 +1,8 @@
 n = int(input("Enter a number: "))
-print(f"Binary of {n} is: {bin(n)[2:]}")
+binary = ''
+while n > 0 :
+    bit = n % 2
+    binary = str(bit) + binary
+    n //= 2
+
+print(binary)
