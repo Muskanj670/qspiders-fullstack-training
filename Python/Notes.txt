@@ -5,7 +5,7 @@
 # Title(): it is a inbuilt fun which is used to capitalize first letter after every space 
 
 
-# if a function contains atleast one written then function calling will be done in the presence of print 
+# if a function contains at-least one written then function calling will be done in the presence of print 
  
 
 #Actual arguments: while creating the function the arguments which we pass are known as actual arguments.
@@ -21,3 +21,56 @@
 ***Example***: def sum(a,b,c=0):
                     print(a+b+c)
                 sum()
+
+
+#Packing: It is a phenomenon where we store individual items in a single collection safe and securely.
+        In python security means tuple, because tuple is the most secure datatype in python.
+        we have two types of packing:
+                a. Single packing which is known as tuple packing
+                b. Double packing which is known as dictionary packing
+        
+        Single/tuple packing: In this packing we store individual items in a tuple collection
+                            for single packing we use single astric(*)
+
+                            ***Syntax***:   def fun(*args):
+                                                logic
+                                            fun(value)
+
+                            ***Example***   def pack(*a):
+                                                print(a)
+                                            pack(1,2,3,4,5)
+
+                                    ->>> (1,2,3,4,5)
+
+        Double/Dictionary Packing: In this packing we store individual values in a form of keys and values in a dictionary datatype.
+                                    For Double packing we use Double astric(**) 
+
+                                    ***Syntax***:   def fun(**args):
+                                                logic
+                                            fun(k1 = v1, k2= v2 .....)
+
+                                    ***Example***   def pack(**a):
+                                                print(a)
+                                            pack(1=1,2=4,3=9,4=16,5=25)
+
+                                    ->>> {1=1,2=4,3=9,4=16,5=25}
+
+#VARIABLE Arguments: It is a phenomenon where we keep two types of packing in single argument.
+
+                                    ***Syntax***:   def fun(*args,**kwargs):
+                                                        logic
+                                                    fun(a,b,c,....k1 = v1, k2= v2 .....)
+
+                                    ***Example***   def pack(*args,**kwargs):
+                                                        print(kwargs)
+                                                    pack(1,2,3,4,5,1=1,2=4,3=9,4=16,5=25)
+
+                                    ->>> {1=1,2=4,3=9,4=16,5=25}
+
+#Unpacking: It is a phenomenon where you convert a collection into individual items.
+
+Recursion: Where function call itself again and again until unless the condition become True.
+            We use Recursion to avoid looping, repeated process.
+            ** In Recursion it is mandatory to have a termination code.
+            ** In Recursion we have 1000 default address block, but we can change it.
+            
