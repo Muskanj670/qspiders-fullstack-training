@@ -6,3 +6,5 @@
   c. Padding Box
   d. Content box
 3. Box model rule was introduced in css-3.
+
+

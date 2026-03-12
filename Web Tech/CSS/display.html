@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Properties</title>
+    <link rel="stylesheet" href="./display.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <h1>Display Properties</h1>
+      <ol>
+        <li>inline</li>
+        <li>block</li>
+        <li>inline - block</li>
+        <li>
+          flex
+          <details>
+            <ol>
+              <li>It is 1 dimension layout system.</li>
+              <li>
+                <h4>Flex container:</h4>
+                Parent element with display:flex that controls layout of its
+                children
+              </li>
+              <li>
+                <h4>Flex item:</h4>
+                Direct children of flex container that get positioned by flex
+                rule.
+              </li>
+              <li>
+                <h4>Flex Axis:</h4>
+                Primary axis along which flex items are arranged(horizontal by
+                default)
+              </li>
+              <li>
+                <h4>Cross Axis:</h4>
+                Perpendicular axis to main axis(vertical by default)
+              </li>
+            </ol>
+            <strong>Flex Container property / Flex parent property</strong>
+            <ol>
+              <li>display:Flex</li>
+              <li>
+                Flex-direction:
+                <ul>
+                  <li>row</li>
+                  <li>column</li>
+                  <li>row-reverse</li>
+                  <li>column-reverse</li>
+                </ul>
+              </li>
+              <li>
+                flex-wrap:
+                <ul>
+                  <li>nowrap</li>
+                  <li>wrap</li>
+                  <li>wrap-reverse</li>
+                </ul>
+              </li>
+              <li>flex-flow:flex-direction flex-wrap</li>
+              <li>gap:row-gap column-gap</li>
+              <li>
+                justify-content:
+                <ol>
+                  <li>flex-start</li>
+                  <li>flex-end</li>
+                  <li>center</li>
+                  <li>space-between</li>
+                  <li>space-around</li>
+                  <li>space-evenly</li>
+                </ol>
+              </li>
+              <li>
+                align-items:
+                <ul>
+                  <li>stretch</li>
+                  <li>flex-start</li>
+                  <li>flex-end</li>
+                  <li>center</li>
+                </ul>
+              </li>
+              <li>
+                align-content:
+                <ul>
+                  <li>stretch</li>
+                  <li>flex-start</li>
+                  <li>flex-end</li>
+                  <li>center</li>
+                  <li>space-between</li>
+                  <li>space-around</li>
+                  <li>space-evenly</li>
+                </ul>
+              </li>
+            </ol>
+          </details>
+        </li>
+        <li>grid</li>
+        <li>none</li>
+      </ol>
+      <h3>Differences:</h3>
+      <ol>
+        <li>
+          <h4>Display: None;</h4>
+          Element removed from flow,takes no space, not accessible
+        </li>
+        <li>
+          <h4>Visibility: Hidden;</h4>
+          Hidden but holds space,children can override with visibility: Visible,
+          not accessible
+        </li>
+        <li>
+          <h4>opacity: 0;</h4>
+          Fully transparent,still takes place, still interactive and supports
+          transition
+        </li>
+      </ol>
+    </div>
+    <div class="container">
+      <div class="card c1">Card 1</div>
+      <div class="card c2">Card 2</div>
+      <div class="card c3">Card 3</div>
+    </div>
+  </body>
+</html>
