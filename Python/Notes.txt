@@ -74,3 +74,11 @@ Recursion: Where function call itself again and again until unless the condition
             ** In Recursion it is mandatory to have a termination code.
             ** In Recursion we have 1000 default address block, but we can change it.
             
+
+
+#Recursion with looping: Recursions are phenomenon where function deals with function only for small operations, but if we want to do big operations we use Recursion with looping.
+    In this, we have to follow some set of instructions:
+        1. Initialize all the argument in a formal argument.
+        2. Create a termination code which is opposite to the while/ loop condition.
+        3. Build the logic
+        4. Update all the arguments in actual argument in the presence of return.
