@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Container Property</title>
+    <link rel="stylesheet" href="./Grid.css">
+</head>
+<body>
+    <div class="info">
+        <div class="container-property">
+            <h1>Grid Container Property</h1>
+            <ol>
+                <li>display:grid</li>
+                <li>grid-template-columns: 200px 200px 
+                    <ul>
+                        <li>repeat: no of cols, size of cols</li>
+                    </ul>
+                </li>
+                <li>grid-template-rows: 150px 150px
+                    <ul>
+                        <li>repeat: no of rows, size of rows</li>
+                    </ul>
+                </li>
+                <li>gap: row-gap  column-gap</li>
+                <li>justify-items:
+                    <ul>
+                        <li>start</li>
+                        <li>end</li>
+                        <li>center</li>
+                        <li>stretch</li>
+                    </ul>
+                </li>
+                <li>align-item:
+                    <ul>
+                        <li>start</li>
+                        <li>end</li>
+                        <li>center</li>
+                        <li>stretch</li>
+                    </ul>
+                </li>
+                <li>place-items: align-item justify-items</li>
+                <li>justify-content:
+                    <ul>
+                        <li>start</li>
+                        <li>end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                        <li>space-evenly</li>
+                    </ul>
+                </li>
+                <li>align-content:
+                    <ul>
+                        <li>start</li>
+                        <li>end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                        <li>space-evenly</li>
+                    </ul>
+                </li>
+                <li>place-content: align-content justify-content</li>
+                <li>grid-auto-flow:
+                    <ul>
+                        <li>row</li>
+                        <li>column</li>
+                    </ul>
+                </li>
+                <li>grid-auto-rows:
+                    <ul>
+                        <li>auto</li>
+                        <li>250px</li>
+                    </ul>
+                </li>
+                <li>grid-auto-columns:
+                    <ul>
+                        <li>auto</li>
+                        <li>250px</li>
+                    </ul>
+                </li>
+                <li>grid-template-areas: </li>
+            </ol>
+        </div>
+        <div class="items-property">
+            <h1>Grid items Property</h1>
+            <ol>
+                <li>grid-row-start:1</li>
+                <li>grid-row-end:5</li>
+                <li><strong>grid-row: start / end</strong></li>
+                <li>grid-column-start:1</li>
+                <li>grid-column-end:5</li>
+                <li><strong>grid-column: start / end</strong></li>
+                <li>justify-self:
+                    <ul>
+                        <li>stretch</li>
+                        <li>start</li>
+                        <li>end</li>
+                        <li>center</li>
+                    </ul>
+                </li>
+                <li>align-self 
+                    <ul>
+                    <li>stretch</li>
+                        <li>start</li>
+                        <li>end</li>
+                        <li>center</li> 
+                    </ul>
+                </li>
+                <li>place-self: align-self justify-self</li>
+                <li>grid-area: header</li>
+            </ol>
+        </div>
+        <div class="special-fun">
+            <h1>Special functions</h1>
+            <ul>
+                <li>minmax(min,max)</li>
+                <li>fr unit</li>
+                <li>auto-fit : Fit whatever columns there are into the space. Prefer expanding columns to fill space rather than empty columns.</li>
+                <li>auto-fill : Fit as many possible columns as possible ona row, even if they are empty.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

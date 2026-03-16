@@ -1,0 +1,14 @@
+.container{
+    width: 800px;
+    height: 500px;
+    border: 2px solid black;
+    /* background-color: turquoise; */
+    background-image: url('/Images/Picture2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top left ;
+}
+
+
+/* container = 800 x 500 */
+/* team-india = 1200 x 675 */

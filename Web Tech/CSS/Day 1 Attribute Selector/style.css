@@ -1,0 +1,27 @@
+/* h2[title^="f1"]{
+    color: red;
+}
+
+h2[title$="t2"]{
+    color: blue;
+} 
+
+
+h2[title~="flex"]{
+    color: tomato;
+}
+
+h2[title*="grid"]
+{
+    color: blue;
+}*/
+
+
+h2[data-kohli]{
+    color: blue;
+}
+
+h2[data-dhoni]
+{
+    color: teal;
+}

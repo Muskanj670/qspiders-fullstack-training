@@ -2,6 +2,76 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    height: 100px;
+    display: flex;
+    background-color: lightcoral;
+}
+
+header .logo{
+    flex-basis: 200px;
+    flex-grow:0;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo a{
+    color: black;
+    text-decoration: None;
+    font-size: 20px;
+}
+header .searchbar-container{
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: inherit;
+}
+
+header .searchbar-container .search-bar{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+header .searchbar-container .search-bar input{
+    width: 85%;
+    align-self: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: None;
+    border-radius: 10px;
+    outline: none;
+}
+header .searchbar-container .search-bar input::placeholder{
+    color: black;
+    letter-spacing: 2px;
+}
+header .profile{
+    flex-basis: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 2px;
+}
+header .profile p{
+    font-weight: bold;
+}
+
+header .profile .profile-pic{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header .profile .profile-pic img{
+    height: 100%;
+    width: 100%;
 }
 .intro ol,ul{
     padding: 0 5%;
