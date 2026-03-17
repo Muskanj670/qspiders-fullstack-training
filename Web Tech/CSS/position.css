@@ -1,34 +1,172 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     width: 100vw;
-}
-header{
-    background-color: lightcoral;
-    height: 80px;
-    width: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
-.center-container{
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #f6f6f68d;
+    box-shadow: 0 1px 4px 0 lightgray;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+}
+
+.center-container {
     height: 100%;
     width: 80%;
-    background-color: antiquewhite;
     margin: auto;
 }
-header .center-container nav{
-    height: 100%;
+
+header .center-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-header .center-container nav .logo{
-    padding: 10px 20px;
+
+header .center-container .logo a {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 3px;
 }
 
-/* header .center-container nav .logo a{
-    
-} */
+header .center-container nav {
+    display: flex;
+    gap: 0 20px;
+}
+
+header .center-container nav a {
+    letter-spacing: 1px;
+    padding: 8px 20px;
+}
+
+
+/* -------------------parent------------------- */
+#parent,
+#child {
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+#parent .center-container,
+#child .center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+#parent .center-container .container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../Images/img1.jpg);
+}
+
+.center-container .container strong {
+    font-size: 40px;
+}
+
+.center-container .container ol {
+    display: flex;
+    gap: 0 10px;
+    justify-content: center;
+}
+
+.center-container .container button {
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #074daaf9;
+    color: white;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px white;
+}
+
+.center-container .container button:hover {
+    border: 2px solid #074daaf9;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 4px black;
+}
+
+/* ----------------------Child---------- */
+#child .center-container .container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/img2.png);
+}
+
+/* ---------------------------Chat Bot---------- */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.chatbot-container p {
+    display: none;
+    position: relative;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px black;
+    right: 35px;
+}
+
+.chatbot-container img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.chatbot-container:hover img {
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+
+.chatbot-container:hover p {
+    display: block;
+}

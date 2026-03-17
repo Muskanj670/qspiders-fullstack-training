@@ -1,45 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Position Properties</title>
-    <link rel="stylesheet" href="./position.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./position.css" />
+  </head>
+  <body>
     <header>
-        <div class="center-container">
-            <nav>
-                <div class="logo">
-                    <a href="#">LOGO</a>
-                </div>
-                <div class="navbar">
-                    <a href="#about">About</a>
-                    <a href="contact">Contact</a>
-                </div>
-            </nav>
+      <div class="center-container">
+        <div class="logo">
+          <a href="#">LOGO</a>
         </div>
+        <nav>
+          <a href="#parent">Parent Property</a>
+          <a href="#child">Child Property</a>
+        </nav>
+      </div>
     </header>
-    <div class="info">
-        <div class="main">
-            <strong>position: </strong>
-            <ol>
-                <li>static</li>
-                <li>relative</li>
-                <li>absolute</li>
-                <li>fixed</li>
-                <li>sticky</li>
-            </ol>
+    <section id="parent">
+      <div class="center-container">
+        <div class="container">
+          <strong>position: </strong>
+          <ol>
+            <li>static</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+            <li>sticky</li>
+          </ol>
+          <a href="#"><button type="button">Know More</button></a>
         </div>
-        <div class="sub">
-            <ol>
-                <li>top: </li>
-                <li>right: </li>
-                <li>bottom: </li>
-                <li>left: </li>
-                <li>z-index: </li>
-            </ol>
+      </div>
+    </section>
+    <section id="child">
+      <div class="center-container">
+        <div class="container">
+            <strong>Child Properties</strong>
+          <ol>
+            <li>top:</li>
+            <li>right:</li>
+            <li>bottom:</li>
+            <li>left:</li>
+            <li>z-index:</li>
+          </ol>
+          <a href="#"><button type="button">Know More</button></a>
         </div>
+      </div>
+    </section>
+    <div class="chatbot-container">
+        <p>Chat with us!</p>
+        <img src="../Images/whatsapp.jpg" alt="Chat with us using WhatsApp">
     </div>
-</body>
+  </body>
 </html>
