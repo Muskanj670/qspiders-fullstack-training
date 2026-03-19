@@ -1,0 +1,32 @@
+--django-admin startapp app_name
+--create urls.py in app_name
+--create a folder named templates in app_name
+--In templates create html file
+--in views.py write: 
+		from django.shortcuts import render
+
+		# Create your views here.
+		def home(request):
+    			return render(request,'index.html')
+
+
+--urls.py in home write:
+		from django.urls import path
+		from home import views
+
+		urlpatterns = [
+    			path('',views.home, name = 'index'),
+		]
+
+--in in project go to settings.py and in installed_apps add your app
+--in urls.py in project include app by writing:
+
+from django.contrib import admin
+from django.urls import path ,include
+from firstProject import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('home',include('home.urls'))
+]
+

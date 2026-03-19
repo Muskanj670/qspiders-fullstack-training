@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+      div {
+        background-color: #fff;
+        padding: 20px;
+        height: 70%;
+        width: 70%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      form {
+        height: 80%;
+        width: 80%;
+        border-radius: 15px;
+        background-color: lightcoral;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        height: 40px;
+        width: 80%;
+        margin: 10px;
+        border-radius: 5px;
+        border: none;
+        padding: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Login form</h1>
+      <form action="">
+        <input type="text" name="username" placeholder="Enter username" />
+        <br />
+        <input type="password" name="password" placeholder="Enter password" />
+        <br />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>
