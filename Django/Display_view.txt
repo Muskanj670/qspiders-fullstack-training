@@ -1,0 +1,8 @@
+1. Create a views.py 
+2. from django.http import HttpResponse
+3. Write your Python code
+4. In urls.py
+        from project_name import views
+        [
+            path('path_name',views.fun_name,name = 'ref_name),
+        ]

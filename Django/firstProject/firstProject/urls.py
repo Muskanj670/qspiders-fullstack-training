@@ -20,5 +20,8 @@ from firstProject import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello', views.home, name='home')
+    path('hello', views.home, name='home'),
+    path('',views.fun),
+    path('Html',views.html),
+    path('htmlFile',views.htmlFile)
 ]

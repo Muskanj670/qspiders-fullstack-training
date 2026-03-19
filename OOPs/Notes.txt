@@ -1,0 +1,22 @@
+OOPs: Object Oriented Programming System
+In python, if we want to work with operations we use programming but anything related to real time senarious we use OOPs.
+Or, it is nothing but relationship btw class and objects.
+
+Class: It is a blueprint for the operation.
+Object: It is an instance of the class.
+Syntax: 
+
+class class_name:
+    Properties
+obj = class_name()
+
+Example:
+class abc:
+    pass
+obj = abc()
+print(type(obj))
+-----> <class:'__main__.abc'>
+
+**While assigning properties to any class or object we use keys and values.
+
+In OOPs properties of class is independent whereas object in dependent.

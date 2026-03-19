@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async vs defer attribute</title>
+  </head>
+  <body>
+    <h3>Normal script (no attribute):</h3>
+    <h4>&lt;script src="script.js"&gt;&lt;/script&gt;</h4>
+    <p>
+      HTML parsing stops -> script downloads + executes -> parsing resumes.
+      Blocking!
+    </p>
+    <h3>Async attribute:</h3>
+    <h4>
+    <h4>&lt;script async src="script.js"&gt;&lt;/script&gt;</h4>
+    </h4>
+    <pre>
+- Scripts downloads in parallel with html parsing.
+- executes immediately when download finishes -> pauses html parsing.
+- No guaranteed order if multiple async scripts.
+    </pre>
+    <h3>Defer attribute:</h3>
+    <h4>
+    <h4>&lt;script defer src="script.js"&gt;&lt;/script&gt;</h4>
+        
+    </h4>
+    <pre>
+- scripts downloads in parallel with html parsing.
+- executes only after full html is parsed.
+- Order is permanent if multiple deferred scripts
+    </pre>
+  </body>
+</html>
