@@ -24,5 +24,5 @@ urlpatterns = [
     path('fun',views.fun),
     path('Html',views.html),
     path('htmlFile',views.htmlFile),
-    path('home',include('home.urls'))
+    path('home/',include('home.urls'))
 ]

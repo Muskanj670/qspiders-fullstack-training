@@ -1,0 +1,70 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+    <!-- <link rel="stylesheet" href="../static/css/home.css" /> -->
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Search..." />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="profile-container">
+        <div class="profile-name">Obito Uchiha</div>
+        <div class="profile-picture">
+          <img src="{% static 'images/img2.png' %}" alt="Profile Picture" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <h1>Welcome to the Home Page 🚀</h1>
+        <p>
+          This is a simple home page template with a header, search bar,
+          navigation menu, and profile section.
+        </p>
+      </div>
+      <div class="sections-container">
+        <section id="home">
+          <h3>Home</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            consequatur magnam itaque, animi error quos cum quas eveniet quae
+            dolore?
+          </p>
+          <button>Know More</button>
+        </section>
+        <section id="about">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            consequatur magnam itaque, animi error quos cum quas eveniet quae
+            dolore?
+          </p>
+          <button>Know More</button>
+        </section>
+        <section id="contact">
+          <h3>Contact</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            consequatur magnam itaque, animi error quos cum quas eveniet quae
+            dolore?
+          </p>
+          <button>Know More</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

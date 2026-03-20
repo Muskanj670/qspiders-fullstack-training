@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #f08080;
+    --primary-dark: #e06666;
+    --bg-main: #fff5f5;
+    --text: #333;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(240, 128, 128, 0.4), rgba(240, 128, 128, 0.4)),
+        url(../images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+div {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    height: 70%;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+form {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(240, 128, 128, 0.4), rgba(240, 128, 128, 0.4)),
+        url(../images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overlay layer */
+form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* adjust opacity here */
+    z-index: 0;
+}
+
+/* Keep content above overlay */
+form>* {
+    position: relative;
+    z-index: 1;
+}
+
+input,
+a {
+    height: 40px;
+    width: 80%;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--primary-dark);
+}
+
+input[type=text],
+input[type="password"] {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+    color: white;
+}
+
+a:hover {
+    background: var(--primary-dark);
+}
