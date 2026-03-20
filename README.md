@@ -5,7 +5,9 @@ A comprehensive **educational learning repository** containing programming funda
 ## 📚 Repository Structure
 
 ### Python Fundamentals (`Python/`)
+
 Complete progression from basics to advanced programming (47+ files)
+
 - **01.py - 14.py**: Core basics (variables, data types, operators, conditionals)
 - **15.py - 25.py**: Control flow (loops, break, continue)
 - **26.py - 40.py**: Functions and pattern printing
@@ -22,45 +24,62 @@ Each file builds on previous concepts with progressive complexity.
 ### Data Structures & Algorithms (`DSA/`)
 
 #### Arithmetic Operations (`DSA/Arithematic/`)
+
 - Basic arithmetic operations using Python fundamentals
 - Files: 1.py - 6.py
 
 #### Flow Control Statements (`DSA/Flow Control Statement/`)
+
 - If-else, switch-case concepts and practice
 - Files: 2.py, 6.py - 9.py
 - PDF: Flow Control Statement concepts
 
 #### Increment/Decrement (`DSA/Increment Decrement/`)
+
 - Java demonstrations of pre/post increment concepts
 - Files: A.java - N.java
 - Concepts: `++var` vs `var++`, assignment operators, comparison
 
 #### Conditional Operators (`DSA/Conditional Operator/`)
+
 - Ternary operators and conditional expressions
 - Files: 1.py, 2.py, 3.py, 4.py, 5.py, 7.py, 15.py, 17.py, 19.py
 
 #### While Loops
+
 **While loop-1/** (Basic while loop patterns)
+
 - 18 practice files (1.py - 18.py)
 - Simple loops, counters, conditions
 
 **While loop-2/** (Intermediate patterns)
+
 - 20 practice files (1.py - 20.py)
 - Nested loops, pattern generation
 
 **While loop-3/** (Advanced patterns)
+
 - Complex pattern printing and algorithmic problems
 - Files: 1.py - 36.py (with gaps)
+
+#### Pattern Printing (`DSA/Pattern/`)
+
+- Extensive collection of pattern printing exercises
+- Files: 1.py - 235.py (with some variations)
+- Covers various geometric patterns, number patterns, character patterns
+- PDF: Pattern concepts and examples
 
 ### Web Technologies (`Web Tech/`)
 
 #### HTML Fundamentals
+
 - Basic structure and semantic tags
 - Forms, tables, audio/video elements
 - Linking between pages
 - Files: index.html, Demo1.html, forms.html, table.html, etc.
 
 #### CSS Styling
+
 - **01_simpleSelector.html**: Element, class, ID selectors
 - **02.combinatorSelector.html**: Adjacent, child, descendant combinators
 - **03_PsuedoclassSelector.html**: :hover, :active, :focus states
@@ -68,6 +87,8 @@ Each file builds on previous concepts with progressive complexity.
 - **06_BoxModel.html**: Margin, padding, border concepts
 - **07_cssUnits.html**: CSS measurement units (px, em, rem, etc.)
 - **08_cssVariables.html**: CSS custom properties and variables
+- **position.html**: CSS positioning (static, relative, absolute, fixed)
+- **transition.html**: CSS transitions and animations
 - **Day 1 Attribute Selector/**: CSS attribute selectors ([type="text"], etc.)
 - **Day 2 Color Property/**: Color values (hex, rgb, rgba, hsl)
 - **Day 2 Font Property/**: Font-family, size, weight, style
@@ -75,16 +96,46 @@ Each file builds on previous concepts with progressive complexity.
 - **boxShadow.html, Grid.html**: Advanced styling techniques
 - Paired CSS files for practical demonstrations
 
+#### JavaScript Fundamentals (`Web Tech/Java Script/`)
+
+- **Day 1 - Types of JS/**: JavaScript data types and variables
+- **Day 1 - Async vs defer/**: Script loading strategies
+- Basic JavaScript concepts and syntax
+
+### Django Framework (`Django/`)
+
+#### Project Setup
+
+- **firstProject/**: Complete Django project with app integration
+- **myenv/**: Python virtual environment for Django
+- Database: SQLite (db.sqlite3)
+- **home/** app with models, views, templates, and URL routing
+
+#### Documentation
+
+- [installationSteps.txt](Django/installationSteps.txt): Django installation guide
+- [How to create an app.txt](Django/How to create an app.txt): App creation tutorial
+- [Display_view.txt](Django/Display_view.txt): View rendering concepts
+
+### Object-Oriented Programming (`OOPs/`)
+
+- **1.py, 2.py**: OOP concepts and examples
+- [Notes.txt](OOPs/Notes.txt): OOP principles and theory
+
 ## 🚀 How to Run Files
 
 ### Python Files
+
 Each file is standalone and executable via terminal:
+
 ```bash
 python filename.py
 ```
+
 Many files use `input()` for user interaction—follow terminal prompts.
 
 **Examples:**
+
 ```bash
 python Python/01.py          # Hello World
 python DSA/While\ loop-1/1.py  # While loop exercise
@@ -92,20 +143,25 @@ python DSA/Arithematic/1.py   # Arithmetic operations
 ```
 
 ### Java Files
+
 Compile and run:
+
 ```bash
 javac Filename.java
 java Filename
 ```
 
 **Examples:**
+
 ```bash
 javac DSA/Increment\ Decrement/A.java
 java A
 ```
 
 ### HTML/CSS Files
+
 Open directly in a web browser:
+
 ```bash
 # On Windows, right-click and select "Open with" → your browser
 # Or drag the HTML file into your browser window
@@ -114,6 +170,7 @@ Open directly in a web browser:
 ## 📝 Code Style & Conventions
 
 ### Python
+
 - Comments use **"WAP"** prefix: `#WAP TO PRINT HELLO WORLD`
 - Heavy use of `input()`/`print()` for interactivity
 - UPPERCASE for constants: `NAME = input("Enter name: ")`
@@ -121,12 +178,14 @@ Open directly in a web browser:
 - Minimal imports; focuses on core language features
 
 ### Java
+
 - Simple standalone classes (no packages)
 - Always includes `public static void main()` entry point
 - Demonstrates specific concepts (operators, control flow)
 - Minimal use of external libraries
 
 ### HTML/CSS
+
 - Standard HTML5 doctype and meta tags
 - Comments mark feature regions: `<!-- TEXT FORMATTING TAG -->`
 - CSS imported via `<link>` tags in HTML files
@@ -141,17 +200,43 @@ Open directly in a web browser:
 5. **DSA/Flow Control Statement/** — Conditional statements
 6. **DSA/Increment Decrement/** — Java-based operator concepts
 7. **DSA/While loop-1, 2, 3/** — Progressive loop complexity
-8. **Web Tech/HTML/** — Markup fundamentals
-9. **Web Tech/CSS/** — Styling progression (selectors → box model → properties)
+8. **DSA/Pattern/** — Pattern printing exercises (1.py - 235.py)
+9. **OOPs/** — Object-oriented programming concepts
+10. **Web Tech/HTML/** — Markup fundamentals
+11. **Web Tech/CSS/** — Styling progression (selectors → box model → positioning → transitions)
+12. **Web Tech/Java Script/** — JavaScript basics and advanced concepts
+13. **Django/** — Web framework development (project setup, apps, views, templates)
+
+## 🚀 How to Run Additional Files
+
+### Django Project
+
+Navigate to project directory and run:
+
+```bash
+cd Django/firstProject
+python manage.py runserver
+```
+
+Access at `http://127.0.0.1:8000/`
+
+### JavaScript Files
+
+Open HTML files containing `<script>` tags in a web browser, or run via Node.js:
+
+```bash
+node filename.js
+```
 
 ## 📌 Important Notes
 
-- **No external dependencies** — All code uses built-in language features only
+- **No external dependencies** — All code uses built-in language features only (except Django which uses virtual environment)
 - **Files are independent** — Each file solves one problem; no module interconnections
 - **Naming preserved** — Some files have typos (e.g., `2,py`) preserved as-is for historical accuracy
 - **Interactive learning** — Python files expect terminal input for hands-on practice
 - **Educational focus** — Code prioritizes clarity and teaching over optimization
 - **PDF resources** — Additional conceptual materials included in relevant directories
+- **Django Environment** — Use `Django/myenv/` virtual environment for Django projects
 
 ## 📚 Additional Resources
 
@@ -164,5 +249,5 @@ Open directly in a web browser:
 ---
 
 **Status**: Actively updated as learning progresses through QSpider training.  
-**Last Updated**: March 16, 2026  
-**Recent Additions**: Generators, recursion, advanced CSS properties, flow control statements
+**Last Updated**: March 20, 2026  
+**Recent Additions**: Django framework, OOPs concepts, JavaScript fundamentals, extensive pattern collection (235+ files), CSS positioning and transitions

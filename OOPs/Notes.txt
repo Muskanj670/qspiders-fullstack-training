@@ -20,3 +20,10 @@ print(type(obj))
 **While assigning properties to any class or object we use keys and values.
 
 In OOPs properties of class is independent whereas object in dependent.
+
+#Members / properties of class and objects
+
+        -> These are the properties which belongs to class AND objects.
+        -> We have two types of Members :
+            a. Static - These are the properties belongs to class
+            b. Object Members - These are the properties belongs to objects
