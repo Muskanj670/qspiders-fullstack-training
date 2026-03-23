@@ -1,0 +1,16 @@
+1. Create template and static dir in base folder
+2. Create html and css files in respective folders
+3. In app create a views
+4. In app create urls for that views
+5. Include app in settings.py and urls.py of project
+6. In settings.py write after 16th line:
+        TEMPLATE_DIR = BASE_DIR/'templates'
+        STATIC_DIR = BASE_DIR/'static'
+
+7. In settings.py in templates write:
+        'dirs' : [TEMPLATE_DIR]
+8. STATIC_URL = 'static/'
+        import os
+        STATICFILES_DIRS = [
+        	STATIC_DIR
+        ]
