@@ -27,3 +27,20 @@ In OOPs properties of class is independent whereas object in dependent.
         -> We have two types of Members :
             a. Static - These are the properties belongs to class
             b. Object Members - These are the properties belongs to objects
+
+
+# Methods: Functions inside the class.
+
+# Constructor / __init__():
+    - It is a special method which is used to initialize the members of the object.
+    - It is used to define the object properties.
+    - self is the first and mandatory argument inside the Constructor.
+    - self is used to carry the address of the object.
+    - We don't need to call constructor outside the class, it is invoked at the time of object creation.
+
+    --> Syntax:
+            class class_name:
+                def __init__(self, arg1, arg2, ....):
+                    self.arg1 = arg1
+                    self.arg2 = arg2
+            obj1 = class_name(val1, val2, ....)

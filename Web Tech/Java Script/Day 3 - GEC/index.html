@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEC</title>
+  </head>
+  <body>
+    <h1>GEC - Global Execution Context</h1>
+    <p>
+      When we give js code to the browser, JS engine will allocate(create) a
+      global memory block to the execution of js code
+    </p>
+    <p>Here, we have a window variable which have referenced to GEC.</p>
+    <h2>JS code run in two phases</h2>
+    <ol>
+      <li>
+        <strong>Variable Phase / Memory creation phase / Compilation phase</strong>
+        <ul>
+          <li>
+            In variable phase, js engine will check the complete js code and it
+            will search for variable declaration statement.
+          </li>
+          <li>
+            if variable is declared them js engine allocate memory for them.
+          </li>
+          <li>
+            variable declared with var will be initialized storing "Undefined"
+            at the time of memory block creation. Variable declared with let and
+            const will remain uninitialized at the time of memory block creation
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Execution phase:</strong>
+        <ul>
+          <li>In this, JS engine will execute the instructions line by line</li>
+        </ul>
+      </li>
+    </ol>
+
+    <script src="../Day 2 - Scope/script2.js"></script>
+  </body>
+</html>
