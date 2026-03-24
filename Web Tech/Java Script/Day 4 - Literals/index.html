@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literals</title>
+  </head>
+  <body>
+    <h1>Literals</h1>
+    <p>
+      Literals are different types of values that is used in writing a program.
+    </p>
+    <h2>Types of Literals:</h2>
+    <ol>
+      <li>
+        Primitive Literals
+        <ul>
+          <li>These are single value literals</li>
+          <li>These are immutable</li>
+          <li>
+            It is of 8 types:
+            <ol>
+              <li>
+                number:
+                <p>Range: -2^(53) -1 to 2^(53) - 1</p>
+              </li>
+              <li>bigInt
+                <p>Range: -infinity to +infinity</p>
+              </li>
+              <li>Nan:
+                <p>Stands for Not a Number <br>
+                It is computational error given by js engine. <br>
+              If we do any operation (like addition, subtraction) with Nan, result will be Nan.</p>
+              <p><strong>Example 1:</strong><div>
+                const a = 10; <br>
+                const b = '5'; <br>
+                console.log(a - b); <br>
+                <strong>Output:</strong> 5
+              </div></p>
+              <p><strong>Example 2:</strong><div>
+                const a = 10; <br>
+                const b = '5x'; <br>
+                console.log(a - b); <br>
+                <strong>Output: </strong>Nan
+              </div></p>
+              </li>
+              <li>Boolean:
+                <div><strong>Falsy / False Values:</strong> A value is falsy if JS treats it as false.
+                <ul>
+                  <li>false</li>
+                  <li>0</li>
+                  <li>0.0</li>
+                  <li>0n</li>
+                  <li>Nan</li>
+                  <li>null</li>
+                  <li>Undefined</li>
+                  <li>""(Empty String)</li>
+                </ul></div>
+                <div><strong>Truthy / True values : </strong> A value is truthy if js treats it as true.</div>
+              </li>
+              <li>null</li>
+              <li>undefined</li>
+              <li>string</li>
+              <li>symbol</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Non Primitive Literals
+        <ul>
+          <li>These are multi valued</li>
+          <li>These are mutable</li>
+          <li>Types: Function, Array, Object</li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
