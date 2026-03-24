@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+</head>
+<body>
+    <h1>News</h1>
+    {% if type == 'sports' %}
+    <h2>This is Sports News</h2>
+    {% elif type == 'business' %}
+    <h2>This is Business News</h2>
+    {% elif type == 'entertainment' %}
+    <h2>This is Entertainment News</h2>
+    {% endif %}
+</body>
+</html>

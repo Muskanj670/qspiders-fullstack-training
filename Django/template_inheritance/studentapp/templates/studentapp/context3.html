@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Context Using If Jinja Tag</title>
+</head>
+<body>
+    <h1>Context Using If Jinja Tag</h1>
+    <h2>
+        {% if type == 'Entertainment' %}
+        This is Entertainment News
+
+        {% elif type == 'sports' %}
+        This is Sports News
+
+        {% elif type == 'business' %}
+        This is Business News
+
+        {% else %}
+        Other News
+
+        {% endif %}
+    </h2>
+</body>
+</html>

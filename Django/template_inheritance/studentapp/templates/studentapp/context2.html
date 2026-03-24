@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Context with nested Dictionary</title>
+  </head>
+  <body>
+    <h1>Context Data with nested Dictionary</h1>
+
+    <ul>
+      {% for key, value in context.items %}
+      <li>
+        <h2>{{ key }}</h2>
+        <ul>
+          {% for k, v in value.items %}
+          <li>{{ k }} : {{ v }}</li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
