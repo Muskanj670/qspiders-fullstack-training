@@ -44,3 +44,23 @@ In OOPs properties of class is independent whereas object in dependent.
                     self.arg1 = arg1
                     self.arg2 = arg2
             obj1 = class_name(val1, val2, ....)
+
+# Methods in class:
+    - These are the functions inside the class.
+    - Their are 3 types of methods inside the class:
+        --> Class method
+        --> Object / instance method
+        --> Static Methods
+
+    --> Class Methods: 
+        - It is used to access and modify the members of the class.
+        - '@classmethod' decorator is used to define class method.
+        - 'cls' is the first and mandatory argument in the decorator, which holds the address of the class.
+        - To call the classmethod class_name is used.
+
+        --> Syntax:
+                class class_name:
+                    @classmethod
+                    def method_name(cls, args):
+                        method body
+                class_name.method_name(args)
