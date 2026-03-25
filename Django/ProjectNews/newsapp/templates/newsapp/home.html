@@ -1,11 +1,21 @@
-<!DOCTYPE html>
+{% load static %}
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
-</head>
-<body>
-    <h1>Home Page</h1>
-</body>
+  </head>
+  <body>
+    <center>
+      <img src="{% static 'images/logo.png'%}" alt="" srcset="" />
+    </center>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus hic vero quibusdam ab provident eligendi quas, maxime dignissimos ducimus architecto. Dolorum consequuntur eius molestiae quibusdam veniam pariatur, quos aliquam?</p>
+
+    <ul>
+        <li><a href="{% url 'sports'%}">Sports</a></li>
+        <li><a href="{% url 'business'%}">Business</a></li>
+        <li><a href="{% url 'entertainment'%}">Entertainment</a></li>
+    </ul>
+  </body>
 </html>

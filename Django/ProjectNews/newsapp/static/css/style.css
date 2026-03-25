@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 99vw;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 50px;
+}
+
+div {
+    width: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+img {
+    height: 300px;
+    width: 500px;
+}
+
+li {
+    padding: 8px 10px;
+
+}

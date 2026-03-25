@@ -1,18 +1,37 @@
-<!DOCTYPE html>
+{% load static %}
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Page</title>
-</head>
-<body>
-    <h1>News</h1>
-    {% if type == 'sports' %}
-    <h2>This is Sports News</h2>
-    {% elif type == 'business' %}
-    <h2>This is Business News</h2>
-    {% elif type == 'entertainment' %}
-    <h2>This is Entertainment News</h2>
-    {% endif %}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{news.type}} News Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <button><a href="{% url 'home' %}">Back to Home Page</a></button>
+    <h1>This is {{news.type}} news</h1>
+    <div>
+      {% if news.type == 'sports' %}
+      <img src="{% static 'images\s1.jfif' %}" alt="" />
+      <img src="{% static 'images\s2.jfif' %}" alt="" />
+      <img src="{% static 'images\s3.jfif' %}" alt="" />
+
+      {% elif news.type == 'business' %}
+      <img src="{% static 'images\b1.jfif' %}" alt="" />
+      <img src="{% static 'images\b2.jfif' %}" alt="" />
+      <img src="{% static 'images\b3.jfif' %}" alt="" />
+
+      {% elif news.type == 'entertainment' %}
+      <img src="{% static 'images\img2.png' %}" alt="" />
+      <img src="{% static 'images\img3.png' %}" alt="" />
+      <img src="{% static 'images\img4.png' %}" alt="" />
+
+      {% endif %}
+    </div>
+    <ul>
+      <li><h4>{{news.msg1}}</h4></li>
+      <li><h4>{{news.msg2}}</h4></li>
+      <li><h4>{{news.msg3}}</h4></li>
+    </ul>
+  </body>
 </html>
