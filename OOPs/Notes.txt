@@ -64,3 +64,32 @@ In OOPs properties of class is independent whereas object in dependent.
                     def method_name(cls, args):
                         method body
                 class_name.method_name(args)
+
+    --> Instance Methods:
+        - It is used to access and modify the members of the object.
+        - It takes the first and mandatory argument 'self' inside it.
+
+        --> Syntax:
+                class class_name:
+                    def method_name(self):
+                        SB
+
+                obj = class_name(args)
+                obj.method_name()
+
+    --> Static Methods:
+        - It is used to store extra functionalities.
+        - Used as a utility or helper method.
+        - '@staticmethod' decorator is used to define static method.
+        - It does not take any mandatory argument.
+        - We can call this method by using both class as well as object.
+
+        --> Syntax:
+            class class_name:
+                @staticmethod
+                def method_name(args):
+                    SB
+                
+            obj = class_name()
+            obj.method_name(args)
+            class_name.method_name(args)

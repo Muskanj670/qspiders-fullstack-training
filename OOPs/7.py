@@ -14,15 +14,9 @@ class bank:    #Defining a class
     # Class method to update class properties
     @classmethod
     def change_location(cls):
-        new = input(f"Enter new location : ")
-        cls.bloc = new
+        cls.bloc = cls.get_address()  #Getting new address from static method
         bank.bank_info()
-    
-    @classmethod
-    def change_ifsc(cls):
-        new = input(f"Enter new ifsc : ")
-        cls.ifsc = new
-        bank.bank_info()
+
 
     # Constructor to define object properties
     def __init__(self,name,ph,email,address):
@@ -37,19 +31,22 @@ class bank:    #Defining a class
 
     # Instance method to modify object properties
     def change_customer_address(self):
-        new = input("\nEnter the new address: ")
-        self.address = new
+        self.address = self.get_address()  #Getting new address from static method
         print(f'\n----------------Address Updated Successfully...........')
         self.customer_info()
 
-    
+    #Static method 
+    @staticmethod  #Decorator used for creating static method
+    def get_address():
+        addr = input("Enter new address: ")
+        return addr
+
 
 # Calling class method to access class properties
 bank.bank_info()
 
 # Calling class methods to modify class properties
 bank.change_location()
-bank.change_ifsc()
 
 # Creating object and calling constructor to assign object properties
 c1 = bank("Muskan Jain",7894561230,'muskan@gmail.com','Agra')

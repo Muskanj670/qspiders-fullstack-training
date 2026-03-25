@@ -6,6 +6,5 @@ class hospital:
 
 p1 = hospital()
 p1.name = 'Deepak Jordan'
-p1.dis = 'Loveria'
+p1.dis = 'Headache'
 p1.ass_doc = hospital.doc
-0
