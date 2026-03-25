@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type coercion</title>
+  </head>
+  <body>
+    <h1>Type Coercion</h1>
+    <p>
+      To convert one type of data into another type is known as type coercion.
+    </p>
+    <h2>Types of type coercion:</h2>
+    <ol>
+      <li>
+        <h3>Implicit type coercion</h3>
+        <div>
+          To convert one type of data into another type
+          implicitly(automatically) by js engine itself.
+        </div>
+        <strong>Example:</strong>
+        <p>
+          const a = 10; <br />
+          const b = '5'; <br />
+          console.log(a - b);
+        </p>
+        <p>-b will be converted into number automatically by js engine.</p>
+      </li>
+      <li>
+        <h3>Explicit Type coercion:</h3>
+        <div>
+          To convert one type of data into another type forcefully by js engine
+          <br />
+          Here we use some special inbuilt methods:
+          <ul>
+            <li>Number()/+
+              <script src="./number.js"></script>
+            </li>
+            <li>Boolean()
+              <script src="./boolean.js"></script>
+            </li>
+            <li>String()
+              <script src="./string.js"></script>
+            </li>
+            <li>Symbol()</li>
+            <li>BigInt()</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </body>
+</html>

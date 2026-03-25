@@ -13,7 +13,7 @@
     <h2>Types of Literals:</h2>
     <ol>
       <li>
-        Primitive Literals
+        <h3>Primitive Literals</h3>
         <ul>
           <li>These are single value literals</li>
           <li>These are immutable</li>
@@ -21,13 +21,13 @@
             It is of 8 types:
             <ol>
               <li>
-                number:
+                <h4>numbers:</h4>
                 <p>Range: -2^(53) -1 to 2^(53) - 1</p>
               </li>
-              <li>bigInt
+              <li><h4>bigInt:</h4>
                 <p>Range: -infinity to +infinity</p>
               </li>
-              <li>Nan:
+              <li><h4>Nan:</h4>
                 <p>Stands for Not a Number <br>
                 It is computational error given by js engine. <br>
               If we do any operation (like addition, subtraction) with Nan, result will be Nan.</p>
@@ -44,7 +44,7 @@
                 <strong>Output: </strong>Nan
               </div></p>
               </li>
-              <li>Boolean:
+              <li><h4>Boolean:</h4>
                 <div><strong>Falsy / False Values:</strong> A value is falsy if JS treats it as false.
                 <ul>
                   <li>false</li>
@@ -58,16 +58,37 @@
                 </ul></div>
                 <div><strong>Truthy / True values : </strong> A value is truthy if js treats it as true.</div>
               </li>
-              <li>null</li>
-              <li>undefined</li>
-              <li>string</li>
-              <li>symbol</li>
+              <li><h4>null:</h4>
+                <div>null is an international absence of value (set by you);</div>
+              </li>
+              <li><h4>undefined:</h4>
+                <div>Undefined means a variable exists but has not been assigned a value yet(set by js).</div>
+              </li>
+              <div><br><strong>Difference between undefined and not defined</strong>
+              <p>undefined means variable exist but has no value <br>not defined means the variable does not exist at all(throws a ReferenceError)</p></div>
+              <li><h4>string:</h4>
+                <div><p>Strings are collection of characters</p>
+                <p>These are of two types:
+                  <ul>
+                    <li><strong>Single Value String :</strong> In this we can not have linebreak or white spaces in this.</li>
+                    <li><strong>Multi line String / Template String :</strong> In this we can have linebreak or white spaces in this. Denoted inside ``</li>
+
+                  </ul>
+                </p></div>
+              </li>
+              <li><h4>symbol:</h4>
+              <div>
+                  const a = 10; <br>
+                  const b = symbol(a);<br>
+                  console.log(b);
+              </div>
+            </li>
             </ol>
           </li>
         </ul>
       </li>
       <li>
-        Non Primitive Literals
+        <h3>Non Primitive Literals</h3>
         <ul>
           <li>These are multi valued</li>
           <li>These are mutable</li>
@@ -75,5 +96,7 @@
         </ul>
       </li>
     </ol>
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
   </body>
 </html>
