@@ -1,0 +1,15 @@
+1. What is OOPs and its uses?
+2. What is class and objects? Explain with example.
+3. How to create an object for a class?
+4. How many types of attributes are their?
+5. What is the difference between class members and object members?
+6. How to define Object attributes?
+7. What is constructor?
+8. What is the difference between method and function?
+9. What is the use of self parameter in the constructor?
+10. How the constructor method is called?
+11. What are the types of method in OOPs?
+12. How to call different methods in the class?
+13. How to define static method and whats the use of it?
+14. Do we need to provide any mandatory argument in the static method ?
+15. Difference between parameterized constructor and non parameterized constructor.
