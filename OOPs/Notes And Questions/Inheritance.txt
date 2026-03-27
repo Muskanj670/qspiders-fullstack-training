@@ -1,0 +1,34 @@
+Inheritance: It is a process of transferring properties from one class to another.
+
+Parent class: Class from which properties are transferred.
+Child class: Class to which properties are transferred.
+
+**Properties are always transferred from Parent class to Child class but vice versa is not possible.
+
+Their are 5 types of Inheritance:
+    1. Single level Inheritance
+    2. Multi level Inheritance
+    3. Multiple Inheritance
+    4. hierarchical Inheritance
+    5. Hybrid Inheritance
+
+
+1. Single level Inheritance:
+    - In this the properties are transferred from Single Parent to class to a Single Child class.
+
+2. Multi level Inheritance:
+    - In this the properties are transferred from Single Parent class to Single Child class by considering more that one level.
+
+3. Multiple Inheritance:
+    - In this pr are transferred from Multiple Parent class to Single Child class.
+
+***Note***:
+    - Method resolution Order: It is an Order in which python looks for an attribute or Method specially in multiple Inheritance.
+    - In this order the child class always gives the properties to itself.
+    - If the Method or attribute are not present inside the child class, then it will search from its nearest Parent( from left to right).
+
+4. Hierarchical Inheritance:
+    - In this properties are transferred from Single Parent class to multiple child class.
+
+5. Hybrid Inheritance:
+    - 

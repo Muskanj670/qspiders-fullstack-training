@@ -23,7 +23,7 @@ Each file builds on previous concepts with progressive complexity.
 
 ### Data Structures & Algorithms (`DSA/`)
 
-#### Arithmetic Operations (`DSA/Arithematic/`)
+#### Arithmetic Operations (`DSA/Arithmetic/`)
 
 - Basic arithmetic operations using Python fundamentals
 - Files: 1.py - 6.py
@@ -81,9 +81,9 @@ Each file builds on previous concepts with progressive complexity.
 #### CSS Styling
 
 - **01_simpleSelector.html**: Element, class, ID selectors
-- **02.combinatorSelector.html**: Adjacent, child, descendant combinators
-- **03_PsuedoclassSelector.html**: :hover, :active, :focus states
-- **04_PsuedoElementSelector.html**: ::before, ::after pseudo-elements
+- **02.combinatorSelector.html**: Adjacent, child, descendant combinator
+- **03_PseudoclassSelector.html**: :hover, :active, :focus states
+- **04_PseudoElementSelector.html**: ::before, ::after pseudo-elements
 - **06_BoxModel.html**: Margin, padding, border concepts
 - **07_cssUnits.html**: CSS measurement units (px, em, rem, etc.)
 - **08_cssVariables.html**: CSS custom properties and variables
@@ -139,7 +139,7 @@ Many files use `input()` for user interaction—follow terminal prompts.
 ```bash
 python Python/01.py          # Hello World
 python DSA/While\ loop-1/1.py  # While loop exercise
-python DSA/Arithematic/1.py   # Arithmetic operations
+python DSA/Arithmetic/1.py   # Arithmetic operations
 ```
 
 ### Java Files
@@ -196,7 +196,7 @@ Open directly in a web browser:
 1. **Start with Python/01.py through Python/14.py** — Language fundamentals
 2. **Move to Python/15.py onwards** — Control flow and functions
 3. **Python/Generator.py, r1.py-r5.py** — Advanced concepts (generators, recursion)
-4. **Parallel: DSA/Arithematic/** — Basic operations reinforcement
+4. **Parallel: DSA/Arithmetic/** — Basic operations reinforcement
 5. **DSA/Flow Control Statement/** — Conditional statements
 6. **DSA/Increment Decrement/** — Java-based operator concepts
 7. **DSA/While loop-1, 2, 3/** — Progressive loop complexity
