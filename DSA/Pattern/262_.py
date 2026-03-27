@@ -1,6 +1,22 @@
 n = int(input("Enter a number: "))
-start = n//2 +1
-for i in range(n):
-    num = start
-    for j in range(n):
-        print(num,end=" ")
+mid = n//2 + 1
+start = 1
+end = n
+for i in range(1,n+1):
+    num = mid
+    for j in range(1,n+1):
+        if j < start:
+            print(num,end=" ")
+            num -= 1
+        elif j >= end:
+            print(num, end=" ")
+            num +=1
+        else:
+            print(num, end=" ")
+    print()
+    if i < mid:
+        start += 1
+        end -= 1
+    else:
+        start -= 1
+        end += 1 
