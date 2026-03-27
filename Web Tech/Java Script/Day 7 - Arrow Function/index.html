@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <h1>Arrow Function</h1>
+    <strong>What is arrow function?</strong>
+    <ul>
+      <li>
+        An arrow function is just a shorter way to write a function in js.
+      </li>
+      <li>
+        It does not have its own this - it borrows this from wherever it was
+        return.
+      </li>
+    </ul>
+    <strong>Why we use Arrow function is JS?</strong>
+    <ul>
+      <li>For cleaner syntax and content.</li>
+      <li>Avoid this confusion in callback.</li>
+    </ul>
+    <ol>
+      <li><h2>Implicit Arrow Function</h2></li>
+      <strong
+        >When you skip return and {} - arrow function return
+        automatically.</strong
+      >
+      <pre>
+            const sum = (a,b) => a+b;
+            const c = sum(10,15);
+        </pre
+      >
+      <li><h2>Explicit Arrow Function</h2></li>
+      <strong>When you use return keyword inside curly braces {}.</strong>
+      <pre>
+        const sum2 = (x,y) =>{
+            const total = x + y;
+            console.log(total)
+            return total     
+        }
+        const z = sum2(10,15);
+        console.log(z)
+      </pre>
+    </ol>
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+  </body>
+</html>

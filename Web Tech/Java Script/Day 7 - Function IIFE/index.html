@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IIFE</title>
+  </head>
+  <body>
+    <h1>IIFE</h1>
+    <div>
+      <p>
+        A function that defines and executes itself immediately, used to create
+        private scope and avoid polluting the global namespace
+      </p>
+    </div>
+    <pre>
+        (function model()
+        {
+            const res = confirm("Do you want to share your Address...");
+            console.log(res);
+        })()
+    </pre>
+    <script src="./script.js"></script>
+  </body>
+</html>
