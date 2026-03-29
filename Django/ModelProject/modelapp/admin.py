@@ -3,5 +3,5 @@ from .models import StudentModel
 
 # Register your models here.
 class StudentModelAdmin(admin.ModelAdmin):
-    list_display = ['name','roll','subject','email','address']
+    list_display = ['id','name','roll','subject','email','address']
 admin.site.register(StudentModel,StudentModelAdmin)
