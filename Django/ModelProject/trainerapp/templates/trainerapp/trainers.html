@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Trainers</title>
+  </head>
+  <body>
+    <h1>Trainers List</h1>
+    <table border="1", cellpadding = 6>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Email</th>
+        <th>Address</th>
+      </tr>
+
+      {% for trainer in trainers %}
+      <tr>
+        <td>{{ trainer.id }}</td>
+        <td>{{ trainer.name }}</td>
+        <td>{{ trainer.subject }}</td>
+        <td>{{ trainer.email }}</td>
+        <td>{{ trainer.address }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
