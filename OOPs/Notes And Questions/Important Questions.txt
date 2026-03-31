@@ -13,3 +13,13 @@
 13. How to define static method and whats the use of it?
 14. Do we need to provide any mandatory argument in the static method ?
 15. Difference between parameterized constructor and non parameterized constructor.
+16. What is inheritance and explain its types.
+17. Difference between single level and multilevel inheritance.
+18. Difference between multilevel and multiple inheritance.
+19. What is method Resolution order?
+20. What is hybrid inheritance.
+21. How many types of relations can be established between two classes?
+22. What is the difference between is-a relation and has-a relation?
+23. Difference between aggregation and composition relation.
+24. What is constructor chaining and how to perform it?
+25. What is method chaining and how to perform it?
