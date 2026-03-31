@@ -1,0 +1,30 @@
+Their are two types of relation between classes:
+    1. Is-a relation (Inheritance)
+    2. Has-a relation 
+
+1. Is-a relation:
+    - It is a type of relation where all the properties are transferred from one class to another class.
+    - We can achieve this with the help of Inheritance.
+    
+    --> Example:   ------------------- Dog *is a* Animal-----------
+    class Animal:
+        def walk(self):
+            print("Animal can walk")
+
+    class Dog(Animal):
+        pass
+
+    obj1 = Dog()
+    obj1.walk()
+
+2. Has-a relation:
+    - It is a type of relation where one class owns another class.
+    - In this relation the object of one class will be property of another class.
+    - Their are two types of has-a relation:
+        a. Aggregation
+        b. Composition
+
+    a. Aggregation: 
+        - Object is independent of the class.
+    b. Composition:
+        - Object is dependent on the class.
