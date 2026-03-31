@@ -31,4 +31,4 @@ Their are 5 types of Inheritance:
     - In this properties are transferred from Single Parent class to multiple child class.
 
 5. Hybrid Inheritance:
-    - 
+    - It is a combination of two or more types of Inheritance.
