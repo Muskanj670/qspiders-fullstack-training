@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <h1>Array</h1>
+    <ol>
+      <li>Array is an object in JS</li>
+      <li>It is non-primitive type of literal</li>
+      <li>
+        It is block of memory which is used to store multiple type of values
+        (any type of literal) in same memory block
+      </li>
+      <li>
+        Array size is dynamic, it means we can store heterogenous type of data
+        and n number of data
+      </li>
+      <li>Values stored inside array are referred as array elements</li>
+    </ol>
+
+    <h2>Inbuilt methods of Array</h2>
+    <ol>
+      <li>
+        <strong>Original Value Modified</strong>
+        <ul>
+          <li>
+            var.push(value) -- Inserts value at the end of the array and return
+            updated length
+          </li>
+          <li>
+            var.pop() -- Deletes the last value of the Array and returns the
+            removed value
+          </li>
+          <li>
+            var.unshift(value) -- It is used to insert element at first index of
+            an array and return updated array length.
+          </li>
+          <li>
+            var.shift() -- It is used to delete element from the first ins=dex
+            and return deleted element
+          </li>
+          <li>
+            var.splice(start, no of elements to be deleted, new values to be
+            added) -- It is used to perform insertion, updation, deletion in
+            array and return the array of deleted elements
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Original Value unmodified</strong>
+        <ul>
+          <li>
+            var.slice(start,stop) -- It is used to copy array element and
+            returns array of copied element.
+          </li>
+          <li>
+            var.indexOf(search value, starting index) -- It is used to get the
+            index of array element, If element is available return element's
+            index else returns -1
+          </li>
+        </ul>
+      </li>
+      <li>includes()</li>
+      <li>reverse()</li>
+      <li>sort(callback)</li>
+      <li>forEach(callback)</li>
+      <li>map(callback)</li>
+      <li>filter(callback)</li>
+      <li>reduce(callback)</li>
+      <li>reduceRight(callback)</li>
+      <li>find(callback)</li>
+      <li>findIndex(callback)</li>
+      <li>flat()</li>
+      <li>some(callback)</li>
+      <li>every(callback)</li>
+      <li>Array.isArray()</li>
+      <li>Array.from()</li>
+    </ol>
+  </body>
+  <script src="./script.js"></script>
+</html>
