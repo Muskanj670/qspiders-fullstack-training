@@ -1,5 +1,3 @@
-def getDigitCount(n, count = 0):
-    if n < 10:
-        return count+1
-    return getDigitCount(n//10, count+1)
+def getDigitCount(n):
+    return 1 if n < 10 else 1+ getDigitCount(n//10)
 print(getDigitCount(345270))

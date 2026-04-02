@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <h1>FEEDBACK FORM</h1>
+    {% if submitted %}
+    <p>Form is submitted successfully....</p>
+    {% else %}
+    <form method="POST">
+      {% csrf_token %}
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td>
+            <input
+              type="text"
+              placeholder="Fullname"
+              name="name"
+              id="name"
+              required
+            />
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="feedback">Feedback: </label></td>
+          <td>
+            <input
+              type="text"
+              name="feedback"
+              id="feedback"
+              placeholder="Excellent"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+
+      <button>Submit</button>
+    </form>
+    {% endif %}
+  </body>
+</html>
