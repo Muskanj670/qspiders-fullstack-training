@@ -6,9 +6,11 @@
     <title>Feedback Form</title>
   </head>
   <body>
+    <a href="{% url 'home' %}"><button>Home</button></a>
     <h1>FEEDBACK FORM</h1>
     {% if submitted %}
     <p>Form is submitted successfully....</p>
+    <a href="{% url 'feedback' %}"><button>View Feedback</button></a>
     {% else %}
     <form method="POST">
       {% csrf_token %}

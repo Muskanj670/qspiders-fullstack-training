@@ -2,7 +2,7 @@ from django.urls import path
 from myapp import views
 
 urlpatterns = [
-    path('form/', views.form),
-    path('feedback/',views.feedback)
-
+    path('',views.home, name = 'home'),
+    path('form/', views.form, name= 'form'),
+    path('feedback/',views.feedback, name = 'feedback'),
 ]
