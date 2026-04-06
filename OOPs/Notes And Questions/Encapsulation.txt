@@ -1,0 +1,49 @@
+Encapsulation:
+    - It is a process of wrapping the data and methods in a single unit.
+    - By the help of Encapsulation we can restrict the direct access to the data by the help of access specifier.
+    - Their are three types of access specifier
+        -> Public (default)
+        -> Protected
+        -> Private
+
+
+    -> Public specifier:
+        - These are the members of the class which can be accessed inside the child class, inside itself and outside the class also.
+        - By default all the methods and data are known as Public members.
+
+    -> Protected specifier:
+        - In python, Protected specifier are defined by the help of single underscore ( _ ).
+        - Protected members provides security to the data or method so that they can not be accessed outside of the class.
+        - It is not supported in python version 3.* .
+
+        - Syntax: 
+            class className:
+                _property_1 = data_1
+                _property_2 = data_2
+
+                @classmethod
+                def _methodname(cls):
+                    SB
+
+                def _methodname(self):
+                    SB
+
+    -> Private specifier:
+        - These are the members of the class which provides security to data or method.
+        - We can not access the Private members inside the child class and outside the class.
+        - We can only access the Private members inside its own class.
+        - In python, Private specifier are defined by the help of double underscore ( __ ).
+
+        - Syntax: 
+            class className:
+                __property_1 = data_1
+                __property_2 = data_2
+
+                @classmethod
+                def __methodname(cls):
+                    SB
+
+                def __methodname(self):
+                    SB
+
+        - To access the Private members inside the class we use getter method and setter method.

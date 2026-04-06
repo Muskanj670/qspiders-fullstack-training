@@ -1,0 +1,42 @@
+Polymorphism:
+    - It is a process of using same method or operator in two or more types of operations.
+    - In four ways we can perform it:
+        a. Method overloading
+        b. Method overriding
+        c. Duck typing
+        d. operator overloading
+
+
+    a. Method overloading:
+        - In this, one class will contain same method with different num of arguments.
+        - Python does not support traditional method overloading.
+        - We can achieve method overloading in python by two ways:
+            a. By using default arguments
+            b. By using variable length arguments (*args, **kwargs)
+
+    b. Method overriding:
+        - Changing the implementation of parent class method inside the child class method according child class needs.
+        - Inheritance is required for method overriding.
+        - Type of method and method signature should be same.
+
+    c. Duck typing:
+        - If it walks like a duck and quacks like a duck then it is a duck.
+        - In python, it does not care about the class (type) as long as the object can call that method.
+        - Class does not matter, method matter
+
+    d. Operator overloading:
+        - It help us to use the operator on the object of user define class by the help of magic methods.
+        - Magic methods are invoked automatically while we use the operator on the object.
+        - Constructor is also a magic method/dunder method.
+
+
+->  __str__(self):
+    - It returns a readable string representation of an object helpful for the user
+        invoke: 1> print(obj)
+                2> str(obj)
+
+->  __repr__(self):
+    - Official representation of an object helpful for the developer.
+    - Invoked when object is called in interactive sell (console).
+    - Help in debugging.
+
