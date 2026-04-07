@@ -1,0 +1,22 @@
+Property Decorator:
+    - It is a inbuilt decorator which help us to define the method in such a way that we can use it as a property without parenthesis.
+    - Syntax:
+        class className:
+            @property
+            def methodName(self):
+                #Method Body
+    - We can also define setter and deleter for the property method.
+    -Syntax:
+        class className:
+            @property
+            def methodName(self):
+                #Method body
+
+            @methodName.setter
+            def methodName(self, value):
+                #Method body
+
+            @methodNme.deleter
+            def methodName(self):
+                #Method body
+

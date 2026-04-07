@@ -23,3 +23,15 @@
 23. Difference between aggregation and composition relation.
 24. What is constructor chaining and how to perform it?
 25. What is method chaining and how to perform it?
+26. What is polymorphism? Explain with example.
+27. What are the types of polymorphism?
+28. Difference between method overloading and method overriding.
+29. Difference between duck typing and method overriding.
+30. What is duck typing? Explain with example.
+31. What is magic method?
+32. What is the difference between __str__() method and __repr__() method?
+33. What is encapsulation and its usage?
+34. What is the difference between public and private member?
+35. How to define private members and how to access them?
+36. What is property decorator?
+37. 
