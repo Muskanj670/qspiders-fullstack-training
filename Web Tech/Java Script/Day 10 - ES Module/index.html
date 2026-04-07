@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES Module</title>
+  </head>
+  <body>
+    <h1>ES Module</h1>
+    <p>
+      ES Module is the official JavaScript module system introduced in
+      ES6(2015). It lets you split code into separate files and share
+      functionality between them using export and import.
+    </p>
+    <p>In ES Module we have two types of export:</p>
+    <ol>
+      <li>
+        <strong>Default Export</strong>
+        <p>
+          Used to export a single function, class, or variable from a module.
+          Name can be renamed freely without braces.
+        </p>
+      </li>
+      <pre>
+            Example of default export:
+            // A.js
+            const sum = (a,b) => a+b;
+            export default sum;
+            // B.js
+            import sum from './A.js';
+            console.log(sum(2,3)); // Output: 5
+        </pre
+      >
+      <li>
+        <strong>Named Export</strong>
+        <p>
+          Used to export multiple functions, classes, or variables from a
+          module.
+        </p>
+      </li>
+      <pre>
+            Example of named export:
+            // A.js
+            const sum = (a,b) => a+b;
+            const product = (a,b) => a*b;
+            export { sum, product };
+            // B.js
+            import { sum, product } from './A.js';
+            console.log(sum(2,3)); // Output: 5
+            console.log(product(2,3)); // Output: 6
+        </pre
+      >
+    </ol>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

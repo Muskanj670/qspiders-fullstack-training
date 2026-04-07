@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shallow and Deep Copy</title>
+  </head>
+  <body>
+    <h1>Shallow and Deep Copy</h1>
+    <h2>Shallow Copy</h2>
+    <p>
+      Only top level primitive values(string, number, boolean) are truly copied.
+      Any object or Array- even at the top level- still shares the same
+      reference as the original.
+    </p>
+    <h2>Deep Copy</h2>
+    <p>
+      Every value at every level is fully duplicated into a new memory
+      reference, completely independent from the original.
+    </p>
+    <script src="./script.js"></script>
+  </body>
+</html>

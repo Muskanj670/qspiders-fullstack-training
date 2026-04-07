@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2><strong>What is Object in JS?</strong></h2>
+    <ul>
+      <li>
+        An object is a block of memory which has state(variable) and
+        behavior(methods) and where we can store heterogeneous data.
+      </li>
+      <li>
+        An object is a collection of key value pairs that can contain various
+        data types such as number, string, array, function and other objects.
+      </li>
+      <li>
+        In one object we can have multiple key-value pair and it should be
+        separated by comma(,).
+      </li>
+      <li>We can access value of object using dot(.) or square braces ([]).</li>
+    </ul>
+
+    <strong>Example</strong>
+    <pre>
+    const emp = {
+        firstNme : 'Muskan',
+        lastNme : 'Jain',
+        email : 'muskan@gmail.com',
+        isWorking : false,
+        getFullName : function(){
+                        console.log(`${this.firstNme} ${this.lastName}`)
+                    }
+    }
+    </pre>
+    <h2>Destructuring In JS</h2>
+    <p>
+      Destructuring is a syntax that lets you unpack values from arrays or
+      properties from objects into instinct variables in a concise way.
+    </p>
+    <script src="./script.js"></script>
+  </body>
+</html>
