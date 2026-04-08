@@ -1,0 +1,30 @@
+Abstraction:
+    - Hiding the internal implementation by providing functionality to the user.
+    - It is the pillar which help us to build the interface or architecture/ design to build a useful product.
+    - To perform abstraction three things are required:
+        -> Abstract class :
+            - It is a class which should contain atleast one abstract method inside it.
+            - Abstract class should be the child class of ABC(Abstract Base class) class.
+            - ABC class is present in abc module.
+            - We cannot create object for abstract class.
+        -> Abstract method :
+            - It is a method which is declared without any implementation.
+            - It is defined with @abstractmethod decorator.
+            - @abstractmethod decorator is present in abc module.
+        -> Concrete class :
+            - It is a class which is the child class of abstract class.
+            - It is responsible to provide implementation for all the abstract method present in the abstract class.
+            - We can create object for concrete class.
+
+    - Syntax:
+        from abc import ABC, abstractmethod
+
+        class AbstractClassName(ABC):
+            @abstractmethod
+            def abstract_method_name(self):
+                pass
+
+        class ConcreteClassName(AbstractClassName):
+            def abstract_method_name(self):
+                # implementation of abstract method
+                

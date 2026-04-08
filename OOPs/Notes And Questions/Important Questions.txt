@@ -34,4 +34,4 @@
 34. What is the difference between public and private member?
 35. How to define private members and how to access them?
 36. What is property decorator?
-37. 
+37. Which class can not be instantiated?
