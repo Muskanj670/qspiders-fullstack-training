@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest and Spread Operator</title>
+  </head>
+  <body>
+    <h1>Rest and Spread Operator</h1>
+    <h2>Rest Operator(...)</h2>
+    <p>
+      The rest operator collects multiple elements and condenses them into a
+      single array. it is used in function parameters or destructuring to gather
+      the 'rest' of the values.
+    </p>
+    <h2>Spread Operator(...)</h2>
+    <p>
+      The spread operator expands an iterable(array, object, string) into
+      individual elements. It is used when passing arguments, building arrays or
+      merging objects.
+    </p>
+
+    <h3>
+      Why spread operator can perform deep copy of only top level primitive
+      values not nested values?
+    </h3>
+    <pre>
+      1. Because primitive values (string, number, boolean) are copied by values, not by references, so spread creates independent copies.
+      2. But in case of nested objects they are copied by reference using spread operator
+    </pre>
+    <script src="./script.js"></script>
+  </body>
+</html>
