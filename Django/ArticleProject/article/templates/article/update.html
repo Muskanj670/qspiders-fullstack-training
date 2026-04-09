@@ -1,0 +1,26 @@
+{% extends 'article/home.html' %}
+
+{% block title %}Update Article{% endblock %}
+
+{% block content %}
+<div class="form-container">
+
+    <h1>Update Article</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="{{ article.title }}" required>
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required>{{ article.content }}</textarea>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" value="{{ article.author }}">
+
+        <button type="submit" class="update-btn">Update</button>
+    </form>
+
+</div>
+{% endblock %}

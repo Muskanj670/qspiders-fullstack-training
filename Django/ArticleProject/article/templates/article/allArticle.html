@@ -1,0 +1,32 @@
+{% extends 'article/home.html' %} {% block content %}
+<h1>All Articles</h1>
+<form action="" method="get" class="filter">
+  <label for="search">Search:</label>
+  <input
+    type="text"
+    id="search"
+    name="search"
+    placeholder="Search by title or author"
+  />
+  <button type="submit">Search</button>
+</form>
+<a href="{% url 'delete_all' %}"><button>Delete all</button></a>
+<div class="article-container">
+  {% for article in articles %}
+
+  <div class="article">
+    <h2>Article {{ article.id }} - {{ article.title | title }}</h2>
+    <h5>
+      Created:{{ article.created_at }} By:<strong>{{ article.author }}</strong>
+    </h5>
+    <p>{{ article.content | truncatechars:20 }}</p>
+    <h6>Last Updated:{{ article.updated_at }}</h6>
+    <a href="{% url 'article' article.id %}"><button>Read More</button></a>
+  </div>
+
+  {% empty %}
+  <marquee>No Article Found</marquee>
+
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,107 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Home{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'all-article' %}">Articles</a>
+      <a href="{% url 'form' %}">Create</a>
+    </nav>
+
+    {% block content %}
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>📝 Share Your Ideas with the World</h1>
+      <p>Write, manage, and explore articles — all in one place.</p>
+
+      <div class="hero-buttons">
+        <a href="{% url 'form' %}">
+          <button class="primary-btn">Create Article</button>
+        </a>
+        <a href="{% url 'all-article' %}">
+          <button class="secondary-btn">Explore Articles</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat-box">
+        <h2>📚</h2>
+        <p>Total Articles</p>
+        <span>{{ total_articles }}</span>
+      </div>
+
+      <div class="stat-box">
+        <h2>✍️</h2>
+        <p>Authors</p>
+        <span>Multiple</span>
+      </div>
+
+      <div class="stat-box">
+        <h2>🚀</h2>
+        <p>Active Users</p>
+        <span>Growing</span>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="feature-card">
+        <h3>✍️ Write Easily</h3>
+        <p>Create articles with a clean interface.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>📚 Manage Content</h3>
+        <p>Edit or delete anytime.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>🔍 Search Fast</h3>
+        <p>Find articles instantly.</p>
+      </div>
+    </section>
+
+    <!-- LATEST ARTICLES -->
+    <section class="latest">
+      <h2>Latest Articles</h2>
+
+      <div class="article-container">
+        {% for article in latest_articles %}
+        <div class="article">
+          <h3>{{ article.title }}</h3>
+          <p>{{ article.content|truncatechars:60 }}</p>
+
+          <a href="{% url 'article' article.id %}">
+            <button>Read More</button>
+          </a>
+        </div>
+        {% empty %}
+        <p>No articles yet.</p>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2>Start Writing Today 🚀</h2>
+      <p>Share your knowledge and ideas with others.</p>
+
+      <a href="{% url 'form' %}">
+        <button class="primary-btn">Get Started</button>
+      </a>
+    </section>
+
+    {% endblock %}
+  </body>
+</html>
