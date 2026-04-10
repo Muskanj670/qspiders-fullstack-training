@@ -1,0 +1,7 @@
+# Array:
+
+    - Is an object created inside heap area.
+    - It is a index based data structure where value can be assigned or accessed by using indexing.
+
+# Two Pointers:
+    - If a problem can be solved by using two or more points on array then such algo are known as two pointers are known as two pointer algo.
