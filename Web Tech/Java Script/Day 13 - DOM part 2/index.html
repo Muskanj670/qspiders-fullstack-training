@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM part 2</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="innerHTML"></div>
+
+    <h1>Difference between textContent and innerHTML</h1>
+    <h2>textContent</h2>
+    <ul>
+      <li>Returns only plain text inside an element</li>
+      <li>Ignores html tags - they appear as raw text</li>
+      <li>Faster, safer from XSS attack</li>
+      <li>Does not trigger reflow for html parsing</li>
+    </ul>
+
+    <h2>innerHTML</h2>
+    <ul>
+      <li>Returns HTML markup inside an element</li>
+      <li>Parses string as html, creating/ removing Dom elements</li>
+      <li>Slower, can be a security risk</li>
+      <li>Trigger reflows after html parsing</li>
+    </ul>
+    <script src="./script.js"></script>
+  </body>
+</html>
