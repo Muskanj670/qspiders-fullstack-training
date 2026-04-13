@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h1>Events</h1>
+    <ul>
+      <li>Events are the actions performed by the user on browser.</li>
+    </ul>
+    <h2>Event Objects</h2>
+    <ul>
+      <li>
+        Event object is an object created by the browser when user perform some
+        action.
+      </li>
+      <li>
+        Event object holds all the information about which type of event
+        occurred ad the element on which the event occurred
+      </li>
+      <li>
+        Event object is passed to respective event listener on every time event
+        occurred.
+      </li>
+    </ul>
+    <h2>Event listener</h2>
+    <ul>
+      <li>
+        Event listener are the functions that wait for the specific event to
+        occur and then execute JS code(callback) assigned to it.
+      </li>
+    </ul>
+
+    <h1>Examples</h1>
+    <h2>Onclick() listener</h2>
+    <h3>Hii</h3>
+    <!-- ! Method 1 -->
+    <button onclick="changeText()">Click</button>
+
+    <!-- ! Method 2 -->
+    <button class="btn1">Click</button>
+
+    <!-- ! Method 3 -->
+    <button id="btn1">Click</button>
+
+    <h2>ondblclick() listener</h2>
+
+    <!-- ! Method 1 -->
+    <button ondblclick="changeColor()">Double Click</button>
+
+    <!-- ! Method 2 -->
+    <button class="btn2">Double Click</button>
+
+    <!-- ! Method 3 -->
+    <button id="btn2">Double Click</button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
