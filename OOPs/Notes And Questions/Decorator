@@ -1,0 +1,26 @@
+Decorator:
+    - In python decorator is used to add extra functionality to the main function without modifying it.
+    - Decorator is a function which takes another function as input(argument).
+    - Their are two types of decorator:
+        a. inbuilt
+        b. User defined
+
+a. Inbuilt decorator:
+    Examples: classmethod, staticmethod, abstractmethod, property
+        
+b. User defined Decorator:
+    - How to create the decorator:
+        def decorator_name(func):
+            def wrapper(*args, **kwargs):
+                pre task
+                func(*args, **kwargs)
+                post task
+            return wrapper
+    - How to use a decorator:
+        @decorator_name
+        def func(args):
+            SB
+        func()
+
+    - How the decorator is called? 
+        func = decorator_name(func)
