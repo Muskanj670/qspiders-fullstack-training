@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Event</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="" id="signupForm">
+      <div>
+        <label for="inp1">FullName</label>
+        <input
+          type="text"
+          name="name"
+          id="inp1"
+          placeholder="Enter your Name"
+        />
+      </div>
+      <div>
+        <label for="inp2">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="inp2"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div>
+        <label for="inp3">Password</label>
+        <input type="password" name="password" id="inp3" />
+      </div>
+
+      <div>
+        <label for="inp4">photo</label>
+        <input type="file" name="photo" id="inp4" multiple>
+      </div>
+
+      <button type="submit">Log in</button>
+      <button type="reset">Cancel</button>
+    </form>
+
+    <h1>Form Events</h1>
+    <h2>Input Event</h2>
+    <p>Fires every time the va;ue of input changes.</p>
+
+    <h2>Change Event</h2>
+    <p>Fires only when the input is changed and the element loses focus.</p>
+
+    <h2>Submit Event</h2>
+    <p>Fires when the form is submitted</p>
+
+    <h2>Reset Event</h2>
+    <p>Fires when the form is reset (all fields cleaned to default)</p>
+
+    <h2>Focus Event</h2>
+    <p>Fires when an input gained focus</p>
+
+    <h2>Blur Event</h2>
+    <p>Fires when an input loses focus</p>
+
+    <h1>FormData = Definition & Syntax</h1>
+    <h2>FormData</h2>
+    <p>
+      FormData is a built-in JavaScript web API that provides a way to construct
+      key-value pairs representing form field and their values. It is primarily
+      used to send data via <strong>fetch</strong> or
+      <strong>XMLHttpRequest</strong>, especially for file uploads or mimicking
+      HTML form submission.
+    </p>
+
+    <h2>Constructor</h2>
+    <p>const formData = new FormData(form?, submitter?);</p>
+    <script src="./script.js"></script>
+  </body>
+</html>
