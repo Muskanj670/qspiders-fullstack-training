@@ -3,18 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Django Forms | Form</title>
+    <title>Update Student</title>
   </head>
   <body>
-    <h1>This is Student Form</h1>
+    <h1>Update Student</h1>
     <form action="" method="post">
       {% csrf_token %} {{form}}
-      <button type="submit">Submit</button>
+      <button type="submit">Update</button>
     </form>
-
-    <hr />
-    <center>
-      <button><a href="{% url 'all' %}">All Data</a></button>
-    </center>
   </body>
 </html>
