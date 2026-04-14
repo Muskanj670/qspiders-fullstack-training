@@ -1,26 +1,30 @@
-{% extends 'article/home.html' %}
+{% extends 'article/base.html' %}
 
-{% block title %}Update Article{% endblock %}
+{% block title %}ArticleHub | Update Article{% endblock %}
 
 {% block content %}
-<div class="form-container">
+<section class="form-layout">
+  <div class="form-layout__intro">
+    <div class="eyebrow">Update content</div>
+    <h1>Refine your article</h1>
+    <p>Make edits to improve clarity, details, or author information.</p>
+  </div>
 
-    <h1>Update Article</h1>
+  <div class="form-card">
+    <form method="post" class="stack-form">
+      {% csrf_token %}
 
-    <form method="post">
-        {% csrf_token %}
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" value="{{ article.title }}" required />
 
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" value="{{ article.title }}" required>
+      <label for="content">Content</label>
+      <textarea id="content" name="content" required>{{ article.content }}</textarea>
 
-        <label for="content">Content:</label>
-        <textarea id="content" name="content" required>{{ article.content }}</textarea>
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" value="{{ article.author }}" />
 
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="author" value="{{ article.author }}">
-
-        <button type="submit" class="update-btn">Update</button>
+      <button type="submit" class="btn btn--primary btn--full">Save Changes</button>
     </form>
-
-</div>
+  </div>
+</section>
 {% endblock %}

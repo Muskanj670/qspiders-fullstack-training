@@ -1,30 +1,41 @@
-{% extends 'article/home.html' %}
+{% extends 'article/base.html' %}
+
+{% block title %}ArticleHub | Create Article{% endblock %}
 
 {% block content %}
-<div class="form-container">
+<section class="form-layout">
+  <div class="form-layout__intro">
+    <div class="eyebrow">Create content</div>
+    <h1>Publish a new article</h1>
+    <p>Use this editor to add a polished article entry to your content library.</p>
+  </div>
 
-    <h1>Submit Article</h1>
-
+  <div class="form-card">
     {% if submitted %}
-        <p class="success-msg">Article submitted successfully!</p>
+    <div class="success-banner">
+      <h2>Article submitted successfully</h2>
+      <p>Your article is now part of the library and ready to review.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="{% url 'all-article' %}">View Articles</a>
+        <a class="btn btn--ghost" href="{% url 'form' %}">Create Another</a>
+      </div>
+    </div>
     {% else %}
+    <form action="" method="post" class="stack-form">
+      {% csrf_token %}
 
-    <form action="" method="post">
-        {% csrf_token %}
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" placeholder="Enter article title" required />
 
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required>
+      <label for="content">Content</label>
+      <textarea id="content" name="content" placeholder="Write your article here" required></textarea>
 
-        <label for="content">Content:</label>
-        <textarea id="content" name="content" required></textarea>
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" value="Anonymous" />
 
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="author" value="Anonymous">
-
-        <button type="submit">Submit</button>
+      <button type="submit" class="btn btn--primary btn--full">Publish Article</button>
     </form>
-
     {% endif %}
-
-</div>
+  </div>
+</section>
 {% endblock %}

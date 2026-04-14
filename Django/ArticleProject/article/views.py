@@ -1,11 +1,21 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from .models import ArticleModel
+from django.db.models import Q
 # Create your views here.
 
 def home(request):
     total_articles = ArticleModel.objects.count()
-    latest_articles = ArticleModel.objects.order_by('-id')[:5]
-    return render(request,'article/home.html', {'total_articles': total_articles, 'latest_articles': latest_articles})
+    total_authors = ArticleModel.objects.values('author').distinct().count()
+    latest_articles = ArticleModel.objects.order_by('-created_at')[:6]
+    return render(
+        request,
+        'article/home.html',
+        {
+            'total_articles': total_articles,
+            'total_authors': total_authors,
+            'latest_articles': latest_articles,
+        },
+    )
 
 def form(request):
     submitted = False
@@ -20,10 +30,12 @@ def form(request):
 def allArticle(request):
     search_query = request.GET.get('search')
     if search_query:
-        article = ArticleModel.objects.filter(title__icontains=search_query)
+        article = ArticleModel.objects.filter(
+            Q(title__icontains=search_query) | Q(content__icontains=search_query) | Q(author__icontains=search_query)
+            ).order_by('-created_at')
     else:
-            article = ArticleModel.objects.all()
-    return render(request,'article/allArticle.html',{'articles':article})
+        article = ArticleModel.objects.all().order_by('-created_at')
+    return render(request,'article/allArticle.html',{'articles':article, 'search_query': search_query or ''})
 
 def article_view(request,id):
     article = ArticleModel.objects.get(id = id)
@@ -31,8 +43,11 @@ def article_view(request,id):
 
 def delete_article(request,id):
     article = ArticleModel.objects.get(id = id)
-    article.delete()
-    return allArticle(request)
+    if request.method == "POST":
+        article.delete()
+        return redirect('all-article')
+
+    return render(request, 'article/confirm_delete.html', {'article': article})
 
 def update_article(request,id):
     article = ArticleModel.objects.get(id = id)
@@ -47,6 +62,7 @@ def update_article(request,id):
 
 def delete_all(request):
     article = ArticleModel.objects.all()
-    article.delete()
-    return allArticle(request)
+    if request.method == "POST":
+        article.delete()
+    return redirect('all-article')
 
