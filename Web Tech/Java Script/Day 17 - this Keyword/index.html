@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this Keyword</title>
+  </head>
+  <body>
+    <h1>this Keyword</h1>
+    <p>
+      <strong>this </strong>is a special keyword that refers to the object it
+      belongs to - its value depends on where and how it's used.
+    </p>
+    <ol>
+      <li>this keyword in GEC = window{}</li>
+      <li>this keyword in regular function = window{}</li>
+      <li>this keyword in arrow function = window{inherit from GEC}</li>
+      <li>this keyword in regular method = object{}</li>
+      <li>this keyword in arrow method = window{}</li>
+      <li>this keyword in class = object{}</li>
+      <li>this keyword in constructor function = object{}</li>
+      <li>this keyword in addEventListner's regular callabck = element{}</li>
+      <li>this keyword in addEventListner's arrow callback = window</li>
+      <li>this keyword in nested regular method = window{}</li>
+      <li>
+        this keyword in nested method, outer is regular and inner is arrow
+        function = object
+      </li>
+    </ol>
+
+    <button id="btn">
+        Change
+    </button>
+    <script src="./script.js"></script>
+  </body>
+</html>
