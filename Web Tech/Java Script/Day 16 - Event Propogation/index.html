@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Propagation</title>
+    <script src="./script.js" defer></script>
+    <style>
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #grandparent {
+        height: 700px;
+        width: 700px;
+        background-color: aqua;
+      }
+
+      #parent {
+        height: 500px;
+        width: 500px;
+        background-color: red;
+      }
+
+      #child {
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Propagation</h1>
+    <p>
+      Event propagation is the order in which events travel through the DOM when
+      an event is triggered on an element.
+    </p>
+    <p>It is happened in three phases:</p>
+
+    <h3>Capturing</h3>
+    <p>Event travels down from root to target element</p>
+    <p>
+      Window -> document -> HTML -> Body -> div#GrandParent -> div#Parent ->
+      div#child
+    </p>
+
+    <h3>Target</h3>
+    <p>Event reaches the actual clicked element</p>
+
+    <h3>Bubbling</h3>
+    <p>Event travel back up from target to root</p>
+    <p>
+      Window <- document <- HTML <- Body <- div#GrandParent <- div#Parent <-
+      div#child
+    </p>
+
+    <h2>Difference between stopPropogation() and </h2>
+
+    <div class="flex">
+      <div id="grandparent" class="flex">
+        <div id="parent" class="flex">
+          <div id="child" class="flex">Child</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
