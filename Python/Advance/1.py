@@ -39,10 +39,23 @@ print(next(iter_obj)) # 40
 # ? Example of iteration on user defined object
 
 class myLoop():
-    def __init__(self, start = 0, stop = 0 ,step = 1):
-        self.start = start
-        self.stop = stop
-        self.step = step
+    def __init__(self, *args):
+        if len(args) > 3:
+            return
+        elif len(args) == 3:
+            self.start = args[0]
+            self.stop = args[1]
+            self.step = args[2]
+
+        elif len(args) == 2:
+            self.start = args[0]
+            self.stop = args[1]
+            self.step = 1
+
+        elif len(args) == 1:
+            self.start = 0
+            self.stop = args[0]
+            self.step = 1
 
     def __iter__(self):
         return self
@@ -58,7 +71,7 @@ class myLoop():
         else:
             raise StopIteration
 
-obj = myLoop(10,0,-2)
+obj = myLoop(10)
 for i in obj:
     print(i)
 

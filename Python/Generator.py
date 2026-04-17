@@ -1,7 +1,7 @@
-# Generator: It is a function where we have a sequance of operation by reaching each and every element present inside the collection. For generator we use a keyword yield.
+# Generator: It is a function where we have a sequence of operation by reaching each and every element present inside the collection. For generator we use a keyword yield.
 # or
 # A function that contains atleast one yield keyword knowns as generator function.
-# To archieve generator we have to use type-casting.
+# To achieve generator we have to use type-casting.
 
 # *****Difference between yield and return*****
 # Return is a keyword which is ued to control the flow of execution by executing value.
