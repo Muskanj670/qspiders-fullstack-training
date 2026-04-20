@@ -53,4 +53,18 @@ def logout_view(request):
     logout(request)
     messages.success(request, "Logged out successfully....✅")
     return redirect('login')
+
+from django.contrib.auth.forms import PasswordChangeForm
+
+@login_required(login_url='login')
+def change_password(request):
+    form = PasswordChangeForm(user = request.user)
+    if request.method == "POST":
+        form = PasswordChangeForm(user = request.user, data = request.POST)
+        if form.is_valid():
+            user = form.save()
+            messages.success(request, "Password changes successfully...")
+            return redirect('home')
+
+    return render(request,"authapp/change_password.html",{"form":form})
     
