@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <h1>Promise</h1>
+    <p>Promise is a special type o f object which represents eventual completion of an asynchronous operation.</p>
+    <p>Promise has 3 states:
+        <ol>
+            <li>pending</li>
+            <li>fulfilled</li>
+            <li>rejected</li>
+        </ol>
+    </p>
+
+    <pre>fetch(url) ----- pending promise: if fulfilled ------- .then(callback) return ----- pending promise : if fulfilled ------ .then(callback)
+                        |                                                                   |   |
+                        |                                                                   |   |
+                        ----------if rejected ------- .catch(callback) return---------------   -----if rejected ------- .catch(callback)
+    </pre>
+
+    <h2>Async /Await</h2>
+    <p>
+        <strong>async</strong> and <strong>await</strong> are keywords in js that make working with promises much easier and cleaner. They allow you to write asynchronous code that looks like synchronous code. 
+        <ul>
+            <li>
+                <strong>async</strong> - Declares a function as asynchronous. It automatically returns a promise.
+            </li>
+            <li>
+                <strong>await</strong> - Pauses the execution of the async function until the promise is resolved.
+            </li>
+        </ul>
+    </p>
+    
+
+<script src="./script.js"></script>
+</body>
+</html>
