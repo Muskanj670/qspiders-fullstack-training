@@ -11,7 +11,7 @@ urlpatterns = [
     path('logout/', views.logout_view , name = "logout"),
     path('change_password/',views.change_password, name = 'change_password'),
     path('reset_password/',
-    PasswordChangeView.as_view(template_name = 'authapp/reset_password.html', success_url = '/'),
+    PasswordChangeView.as_view(template_name = 'reset_password.html', success_url = '/'),
     name = 'reset_password')
 ]                     
 
