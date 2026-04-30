@@ -47,6 +47,15 @@
             added) -- It is used to perform insertion, updation, deletion in
             array and return the array of deleted elements
           </li>
+          <li>var.reverse() -- It is used to reverse the array</li>
+          <strong>Higher Order methods</strong>
+          <li>
+            var.sort(callback) -- If callback return -ve value -> it will sort
+            in ascending order <br />
+            - If callback return +ve value -> It will sort in descending order
+            <br />
+            - If callback return 0 value -> It will not sort
+          </li>
         </ul>
       </li>
 
@@ -58,27 +67,82 @@
             returns array of copied element.
           </li>
           <li>
-            var.indexOf(search value, starting index) -- It is used to get the
+            var.indexOf(search value [,starting index]) -- It is used to get the
             index of array element, If element is available return element's
             index else returns -1
           </li>
+          <li>
+            var.includes(search value [,starting index]) -- It is used to get
+            the boolean output, if element is available return true else false
+          </li>
+          <strong>Higher Order methods</strong>
+          <li>
+            var.forEach(callback) -- It is used to iterate over array elements
+            and index, It does not return anything so js engine implicitly
+            return undefined
+          </li>
+          <li>
+            var.map(callback) -- It is used to iterate over array, it return a
+            new array and the value returned by callback function will be
+            inserted in new array, if it does not return anything 'undefined'
+            will be stored
+          </li>
+          <li>
+            var.filter(callback) -- It is used to iterate over array, it return
+            a new array. Here, element will be inserted in new array only when
+            callback function returns true.
+          </li>
+          <div>
+            <strong>Difference between map and filter?</strong>
+            <pre>
+          map
+            1. Returns a new array of the same length, with each element transformed
+            2. Used to modify/transform every element in the array
+            Example: [1,2,3].map(n => n * 2) → [2, 4, 6]
+         </pre
+            >
+            <pre>
+        filter
+          1. Returns a new array of equal or lesser length, keeping only matching elements
+          2. Used to remove/select elements based on a condition
+          Example: [1,2,3].filter(n => n > 1) → [2, 3]
+         </pre
+            >
+          </div>
+          <li>
+            var.reduce(callback) -- Reduces an array down to a single output
+            value (number, string, object, etc.). Uses an accumulator that
+            carries the running result, starting from the initialValue. Iterates
+            through the entire array, applying the callback on each element
+          </li>
+          <li>var.reduceRight(callback) --</li>
+          <li>
+            var.every(callback) -- Test whether all elements in the array pass
+            the condition. Return true only if every element matches, false if
+            any one fails.
+          </li>
+          <li>
+            var.some(callback) -- Return true even a single element pass the
+            condition.
+          </li>
+          <li>
+            var.flat() -- Convert a nested array into a single array by pulling
+            out inner array.
+          </li>
+          <li>
+            Array.isArray(var) -- It is used to check whether array is present
+            inside variable or not. It return boolean value.
+          </li>
+          <li>
+            Array.from(iterable , map_fn) -- Converts any iterable (string, set,
+            map, etc) into an array. It is also used to convert HTML collection
+            and NodeList into an array.
+          </li>
         </ul>
       </li>
-      <li>includes()</li>
-      <li>reverse()</li>
-      <li>sort(callback)</li>
-      <li>forEach(callback)</li>
-      <li>map(callback)</li>
-      <li>filter(callback)</li>
-      <li>reduce(callback)</li>
-      <li>reduceRight(callback)</li>
+
       <li>find(callback)</li>
       <li>findIndex(callback)</li>
-      <li>flat()</li>
-      <li>some(callback)</li>
-      <li>every(callback)</li>
-      <li>Array.isArray()</li>
-      <li>Array.from()</li>
     </ol>
   </body>
   <script src="./script.js"></script>
