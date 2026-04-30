@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} Base {% endblock %}</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        color: #1f2937;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 8%;
+        background: #ffffff;
+        border-bottom: 1px solid #dbe3ef;
+      }
+
+      .navbar a {
+        color: #1f2937;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .navbar a:hover {
+        color: #2563eb;
+      }
+
+      .navbar .spacer {
+        flex: 1;
+      }
+
+      .container {
+        width: min(1000px, 92%);
+        margin: 32px auto;
+      }
+
+      .panel {
+        background: #ffffff;
+        border: 1px solid #dbe3ef;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 20px;
+      }
+
+      h1,
+      h2 {
+        margin-top: 0;
+      }
+
+      form p {
+        margin: 0 0 14px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        font: inherit;
+      }
+
+      textarea {
+        min-height: 90px;
+        resize: vertical;
+      }
+
+      button,
+      .button {
+        display: inline-block;
+        border: 0;
+        border-radius: 6px;
+        padding: 10px 14px;
+        background: #2563eb;
+        color: #ffffff;
+        cursor: pointer;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: #64748b;
+      }
+
+      .button.success {
+        background: #15803d;
+      }
+
+      .button.danger {
+        background: #dc2626;
+      }
+
+      .messages {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px;
+      }
+
+      .messages li {
+        padding: 12px 14px;
+        border-radius: 6px;
+        background: #e0f2fe;
+        border: 1px solid #7dd3fc;
+      }
+
+      .task-grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      .task-card {
+        border: 1px solid #dbe3ef;
+        border-radius: 8px;
+        padding: 16px;
+        background: #ffffff;
+      }
+
+      .task-card.completed {
+        opacity: 0.75;
+      }
+
+      .task-card.completed h3 {
+        text-decoration: line-through;
+      }
+
+      .task-meta {
+        color: #64748b;
+        font-size: 14px;
+      }
+
+      .task-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="{% url 'home' %}">Home</a>
+      {% if user.is_authenticated %}
+        <a href="{% url 'task' %}">Tasks</a>
+        <span class="spacer"></span>
+        <span>Hi, {{ user.username }}</span>
+        <a href="{% url 'logout' %}">Logout</a>
+      {% else %}
+        <span class="spacer"></span>
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'signup' %}">Signup</a>
+      {% endif %}
+    </div>
+    <main class="container">
+      {% if messages %}
+        <ul class="messages">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% block content %}
+      <h1>Smart TODO Manager</h1>
+      {% endblock %}
+    </main>
+  </body>
+</html>

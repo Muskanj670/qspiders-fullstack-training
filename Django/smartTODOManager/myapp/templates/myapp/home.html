@@ -1,0 +1,15 @@
+{% extends 'myapp/base.html' %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<section class="panel">
+  <h1>Smart TODO Manager</h1>
+  <p>Plan your tasks, track due dates, and keep completed work separate from what still needs attention.</p>
+  {% if user.is_authenticated %}
+    <a class="button" href="{% url 'task' %}">Open Tasks</a>
+  {% else %}
+    <a class="button" href="{% url 'signup' %}">Create Account</a>
+    <a class="button secondary" href="{% url 'login' %}">Login</a>
+  {% endif %}
+</section>
+{% endblock %}

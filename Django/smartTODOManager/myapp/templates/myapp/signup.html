@@ -1,0 +1,12 @@
+{% extends 'myapp/base.html' %} 
+{% block title %} Signup {% endblock %} 
+{% block content %}
+<section class="panel">
+  <h1>Create Account</h1>
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Create User</button>
+  </form>
+</section>
+{% endblock %}
