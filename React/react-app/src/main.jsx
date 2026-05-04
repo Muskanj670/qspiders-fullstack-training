@@ -8,6 +8,7 @@
 // ! React way
 
 import { createRoot } from "react-dom/client";
+import App from "./App";
 createRoot(document.getElementById("root")).render(
-  <h1>Hello in react way!</h1>,
+  <App />
 );
