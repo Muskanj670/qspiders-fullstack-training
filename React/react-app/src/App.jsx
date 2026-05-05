@@ -1,53 +1,61 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-const App = () =>{
+import FunctionBased from "./allTopics/01_Types-of-components/FunctionBased"
+import ClassBased from "./allTopics/01_Types-of-components/ClassBased"
+import StatesInFBC from "./allTopics/02_States/StatesInFBC"
+
+const App = () => {
     const username = 'Muskan';
 
-    function greet(){
+    function greet() {
         return "Welcome";
     };
     return (
-    <>
-        <Navbar/>
-        <h1>I am App component(Parent)</h1>
-        <h2>{greet()} {username}</h2>
-        <hr />
-        <div style={{ textAlign: "center", margin: "1rem 0" }}>
-            <strong>Types of Components</strong>
-        </div>
-        <table border={2}>
-            <thead>
-                <tr>
-                    <th>ClassBased Comp</th>
-                    <th>Function Based Comp</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>JS classes</td>
-                    <td>JS Functions</td>
-                </tr>
-                <tr>
-                    <td>StateFull</td>
-                    <td>Stateless</td>
-                </tr>
-                <tr>
-                    <td>No Hooks</td>
-                    <td>Hooks</td>
-                </tr>
-                <tr>
-                    <td>Life cycle Methods</td>
-                    <td>No Life cycle methods</td>
-                </tr>
-                <tr>
-                    <td>'this' keyword</td>
-                    <td>No 'this' keyword</td>
-                </tr>
-            </tbody>
-        </table>
+        <>
+            <Navbar />
+            <h1>I am App component(Parent)</h1>
+            <h2>{greet()} {username}</h2>
+            <hr />
+            <div style={{ textAlign: "center", margin: "1rem 0" }}>
+                <strong>Types of Components</strong>
+            </div>
+            <table border={2}>
+                <thead>
+                    <tr>
+                        <th>ClassBased Comp</th>
+                        <th>Function Based Comp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JS classes</td>
+                        <td>JS Functions</td>
+                    </tr>
+                    <tr>
+                        <td>StateFull</td>
+                        <td>Stateless</td>
+                    </tr>
+                    <tr>
+                        <td>No Hooks</td>
+                        <td>Hooks</td>
+                    </tr>
+                    <tr>
+                        <td>Life cycle Methods</td>
+                        <td>No Life cycle methods</td>
+                    </tr>
+                    <tr>
+                        <td>'this' keyword</td>
+                        <td>No 'this' keyword</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <Footer/>
-    </>
+            <FunctionBased />
+            <ClassBased />
+            <StatesInFBC />
+
+            <Footer />
+        </>
     );
 }
 export default App 
