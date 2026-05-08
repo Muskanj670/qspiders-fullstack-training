@@ -8,6 +8,7 @@ import Toggle from "./allTopics/02_States/Toggle";
 import CounterFBC from "./allTopics/02_States/CounterFBC";
 import StatesInCBC from "./allTopics/02_States/StatesInCBC";
 import Parent from "./allTopics/03_Props/Parent1";
+import DrillingParent from "./allTopics/04_PropsDrilling/DrillingParent";
 
 const App = () => {
     const username = 'Muskan';
@@ -17,7 +18,7 @@ const App = () => {
     };
     return (
         <>
-            <Navbar />
+            {/* <Navbar />
             <h1>I am App component(Parent)</h1>
             <h2>{greet()} {username}</h2>
             <hr />
@@ -53,17 +54,18 @@ const App = () => {
                         <td>No 'this' keyword</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> */}
 
-            <FunctionBased />
+            {/* <FunctionBased />
             <ClassBased />
             <StatesInFBC />
             <Heart />
             <Toggle />
             <CounterFBC />
             <StatesInCBC />
-            <Parent/>
-            <Footer />
+            <Parent /> */}
+            <DrillingParent />
+            {/* <Footer /> */}
         </>
     );
 }
