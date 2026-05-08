@@ -3,6 +3,11 @@ import Footer from "./components/Footer";
 import FunctionBased from "./allTopics/01_Types-of-components/FunctionBased"
 import ClassBased from "./allTopics/01_Types-of-components/ClassBased"
 import StatesInFBC from "./allTopics/02_States/StatesInFBC"
+import Heart from "./allTopics/02_States/Heart";
+import Toggle from "./allTopics/02_States/Toggle";
+import CounterFBC from "./allTopics/02_States/CounterFBC";
+import StatesInCBC from "./allTopics/02_States/StatesInCBC";
+import Parent from "./allTopics/03_Props/Parent1";
 
 const App = () => {
     const username = 'Muskan';
@@ -53,7 +58,11 @@ const App = () => {
             <FunctionBased />
             <ClassBased />
             <StatesInFBC />
-
+            <Heart />
+            <Toggle />
+            <CounterFBC />
+            <StatesInCBC />
+            <Parent/>
             <Footer />
         </>
     );

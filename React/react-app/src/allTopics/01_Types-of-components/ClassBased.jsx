@@ -3,7 +3,7 @@ class ClassBased extends Component {
     render() {
         return (
             <>
-                <h1>I am ckass based component</h1></>
+                <h1>I am class based component</h1></>
         )
     }
 }
