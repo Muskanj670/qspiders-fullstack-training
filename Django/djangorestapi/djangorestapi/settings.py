@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apiapp01',
     'apiapp02',
     'apiapp03',
+    'apiapp04',
     'rest_framework'
 ]
 
@@ -78,8 +79,12 @@ WSGI_APPLICATION = 'djangorestapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'employee_db',
+        'HOST' : '127.0.0.1',
+        'PORT': 3306,
+        'USER' : 'root',
+        'PASSWORD': '0000'
     }
 }
 
