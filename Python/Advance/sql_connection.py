@@ -18,57 +18,7 @@ cursor.execute("""
 
 cursor.execute("""
     Insert into student (id, name, email, age, subject) values (?,?,?,?,?)
-""", (102, 'Khushi', 'khushi@gmail.com', 18, 'Political'))
+""", (101, 'Muskan', 'muskan@gmail.com', 23, 'Python'))
 
-
-# ! Insert multiple rows
-
-data = [
-    ('Nancy', 'nancy@gmail.com',24,'Maths'),
-    ('Ravi', 'ravi@gmail.com',16,'Business'),
-    ('Rivaa', 'rivaa@gmail.com',21,'Accountancy')    
-        ]
-
-cursor.executemany("""
-    insert into student (name,email,age,subject) values (?,?,?,?)
-""", data)
-
-
-# ! Read the data
-cursor.execute("""
-    select * from student
-    """)
-
-print(cursor.fetchone())
-
-print(cursor.fetchmany(2))
-
-# for row in many_row:
-#     print(row)
-
-
-print(cursor.fetchall())
-# for row in rows:
-#     print(row)
-
-# ! Update data
-
-cursor.execute("""
-    update student set subject = ? where subject = ?
-    """, ('Computer Science', 'Python')
-    )
-
-# ! Delete data
-
-cursor.execute("""
-    delete from student where id = ?
-    """, (102,))
-cursor.execute("""
-    delete from student
-""")
-
-cursor.execute("""
-    DROP TABLE STUDENT
-""")
 conn.commit()
 conn.close()  # Helps to disconnect 
