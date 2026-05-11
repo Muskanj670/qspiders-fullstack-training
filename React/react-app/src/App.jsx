@@ -9,6 +9,10 @@ import CounterFBC from "./allTopics/02_States/CounterFBC";
 import StatesInCBC from "./allTopics/02_States/StatesInCBC";
 import Parent from "./allTopics/03_Props/Parent1";
 import DrillingParent from "./allTopics/04_PropsDrilling/DrillingParent";
+import CallbackParent from "./allTopics/05_Callbacks/CallbackParent";
+import UpliftingParent from "./allTopics/06_StateUplifting/UpliftingParent";
+import UserLists from "./allTopics/07_Lists/UserLists";
+import Employees from "./allTopics/07_Lists/Employees";
 
 const App = () => {
     const username = 'Muskan';
@@ -55,7 +59,6 @@ const App = () => {
                     </tr>
                 </tbody>
             </table> */}
-
             {/* <FunctionBased />
             <ClassBased />
             <StatesInFBC />
@@ -64,7 +67,11 @@ const App = () => {
             <CounterFBC />
             <StatesInCBC />
             <Parent /> */}
-            <DrillingParent />
+            {/* <DrillingParent /> */}
+            {/* <CallbackParent /> */}
+            {/* <UpliftingParent /> */}
+            {/* <UserLists /> */}
+            <Employees />
             {/* <Footer /> */}
         </>
     );
