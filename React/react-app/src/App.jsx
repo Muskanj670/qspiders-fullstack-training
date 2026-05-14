@@ -13,6 +13,8 @@ import CallbackParent from "./allTopics/05_Callbacks/CallbackParent";
 import UpliftingParent from "./allTopics/06_StateUplifting/UpliftingParent";
 import UserLists from "./allTopics/07_Lists/UserLists";
 import Employees from "./allTopics/07_Lists/Employees";
+import ControlledForms1 from "./allTopics/08_ControlledForms/ControlledForms1";
+import ControlledForms2 from "./allTopics/08_ControlledForms/ControlledForms2";
 
 const App = () => {
     const username = 'Muskan';
@@ -71,7 +73,9 @@ const App = () => {
             {/* <CallbackParent /> */}
             {/* <UpliftingParent /> */}
             {/* <UserLists /> */}
-            <Employees />
+            {/* <Employees /> */}
+            <ControlledForms1 />
+            <ControlledForms2 />
             {/* <Footer /> */}
         </>
     );

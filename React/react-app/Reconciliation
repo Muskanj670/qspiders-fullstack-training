@@ -1,0 +1,4 @@
+Virtual DOM:
+    - Every time the state of an application changes, a new Virtual DOM tree is created.
+    - The new Virtual DOM tree is compared with the previous Virtual DOM tree to identify the differences (also known as "diffing").
+    - Once the differences are identified, React updates only the parts of the actual DOM that have changed, which is known as patching and this entire process of updating is called "reconciliation".
