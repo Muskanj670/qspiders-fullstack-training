@@ -6,4 +6,6 @@ from .serializers import EmployeeSerializer
 # Create your views here.
 
 class EmployeeModelAPI(viewsets.ModelViewSet):
-    pass
+    queryset = Employee.objects.all()
+    serializer_class = EmployeeSerializer
+    
