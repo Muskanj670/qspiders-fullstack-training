@@ -23,5 +23,7 @@ urlpatterns = [
     path('api/v2/', include("apiapp02.urls")),
     path('api/v3/', include("apiapp03.urls")),
     path('api/v4/', include("apiapp04.urls")),
-    path('api/v5/', include("apiapp05.urls"))
+    path('api/v5/', include("apiapp05.urls")),
+    path('api/v6/', include("apiapp06.urls")),
+    
 ]

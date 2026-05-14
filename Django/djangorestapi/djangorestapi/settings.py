@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'apiapp03',
     'apiapp04',
     'apiapp05',
+    'apiapp06',
     'rest_framework'
 ]
 
@@ -126,11 +127,24 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+"""
+! BasicAuthenctication
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES' :[
         'rest_framework.authentication.BasicAuthentication'
     ],
     'DEFAULT_PERMISSION_CLASSES' : [
         'rest_framework.permissions.IsAuthenticated'
+    ]
+}
+"""
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES' : [
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly'
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES' :[
+        'rest_framework.authentication.SessionAuthentication'
     ]
 }
