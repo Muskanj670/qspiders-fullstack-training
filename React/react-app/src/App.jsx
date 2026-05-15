@@ -15,6 +15,8 @@ import UserLists from "./allTopics/07_Lists/UserLists";
 import Employees from "./allTopics/07_Lists/Employees";
 import ControlledForms1 from "./allTopics/08_ControlledForms/ControlledForms1";
 import ControlledForms2 from "./allTopics/08_ControlledForms/ControlledForms2";
+import InlineCSS from "./allTopics/09_ReactCSS/InlineCSS";
+import Card from "./allTopics/09_ReactCSS/Card";
 
 const App = () => {
     const username = 'Muskan';
@@ -74,8 +76,10 @@ const App = () => {
             {/* <UpliftingParent /> */}
             {/* <UserLists /> */}
             {/* <Employees /> */}
-            <ControlledForms1 />
-            <ControlledForms2 />
+            {/* <ControlledForms1 />
+            <ControlledForms2 /> */}
+            {/* <InlineCSS /> */}
+            <Card />
             {/* <Footer /> */}
         </>
     );

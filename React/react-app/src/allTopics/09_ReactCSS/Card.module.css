@@ -1,0 +1,49 @@
+#cardContainer {
+    background-color: blanchedalmond;
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.userImage {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.userName {
+    padding: 5px 0;
+}
+
+.desig {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.description {
+    text-align: justify;
+}
+
+.btn {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background-color: rgb(56, 56, 227);
+}
