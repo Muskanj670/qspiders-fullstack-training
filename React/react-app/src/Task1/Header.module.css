@@ -1,0 +1,109 @@
+header {
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+svg {
+    margin-right: 9px;
+}
+
+.upper,
+.lower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left,
+.right,
+.userContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-weight: 600;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.box span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    background: #ffe51f;
+}
+
+.box svg {
+    color: blue;
+    font-size: 30px;
+}
+
+.right {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.right .location p span {
+    color: #2764e8;
+}
+
+.right svg {
+    font-size: 16px;
+}
+
+.coins {
+    background-color: #fefbe8;
+    padding: 5px;
+}
+
+.coins svg {
+    color: #ffe51f;
+}
+
+
+.lower .searchBar {
+    border: 2px solid #3da8ff;
+    border-radius: 10px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 5px;
+    margin-left: 15px;
+}
+
+.searchBar svg {
+    font-size: 25px;
+}
+
+.lower .searchBar input {
+    border: none;
+    outline: none;
+    width: 95%;
+    /* padding-block: 13px; */
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+}
+
+.searchBar input::placeholder {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.userContainer .user {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
