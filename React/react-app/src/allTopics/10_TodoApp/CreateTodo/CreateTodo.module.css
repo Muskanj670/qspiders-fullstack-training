@@ -1,0 +1,32 @@
+.todoform{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.todoform input{
+        padding: .75rem 1.5rem;
+        outline: none;
+        border: none;
+        box-shadow:0  2px 5px black;
+}
+
+.todoform button{
+    padding: .75rem 2rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffe51f;
+    box-shadow: 0 2px 5px black;
+    font-weight: 600;
+    transition: .2s;
+    color: black;
+}
+
+.todoform > button:hover{
+    background-color: #fceb6b;
+}
+
+.todoform> button:active{
+    transform: scale(1.o2);
+}

@@ -19,6 +19,7 @@ import InlineCSS from "./allTopics/09_ReactCSS/InlineCSS";
 import Card from "./allTopics/09_ReactCSS/Card";
 import Header from "./Task1/Header";
 import NavBar from "./Task1/NavBar";
+import TodoWrapper from "./allTopics/10_TodoApp/TodoWrapper";
 
 const App = () => {
     const username = 'Muskan';
@@ -84,6 +85,7 @@ const App = () => {
             {/* <Card /> */}
             <Header/>
             <NavBar/>
+            <TodoWrapper/>
             {/* <Footer /> */}
         </>
     );

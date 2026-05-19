@@ -1,0 +1,13 @@
+.todoList{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+li{
+    border-radius: 5px;
+    background-color: yellowgreen;
+    padding: 10px;
+    width: 150px;
+}
