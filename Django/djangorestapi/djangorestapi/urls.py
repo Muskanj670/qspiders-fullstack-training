@@ -25,5 +25,7 @@ urlpatterns = [
     path('api/v4/', include("apiapp04.urls")),
     path('api/v5/', include("apiapp05.urls")),
     path('api/v6/', include("apiapp06.urls")),
+    path('api/v8/', include("signal_app.urls")),
+
     
 ]

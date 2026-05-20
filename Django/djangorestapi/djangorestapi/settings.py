@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'apiapp04',
     'apiapp05',
     'apiapp06',
+    'apiapp07',
+    'signal_app.apps.SignalAppConfig',
     'rest_framework'
 ]
 
@@ -140,11 +142,11 @@ REST_FRAMEWORK = {
 """
 
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES' : [
-        'rest_framework.permissions.IsAuthenticatedOrReadOnly'
-    ],
-    'DEFAULT_AUTHENTICATION_CLASSES' :[
-        'rest_framework.authentication.SessionAuthentication'
-    ]
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES' : [
+#         'rest_framework.permissions.IsAuthenticatedOrReadOnly'
+#     ],
+#     'DEFAULT_AUTHENTICATION_CLASSES' :[
+#         'rest_framework.authentication.SessionAuthentication'
+#     ]
+# }
