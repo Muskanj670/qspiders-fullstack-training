@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import FunctionBased from "./allTopics/01_Types-of-components/FunctionBased"
-import ClassBased from "./allTopics/01_Types-of-components/ClassBased"
-import StatesInFBC from "./allTopics/02_States/StatesInFBC"
+import FunctionBased from "./allTopics/01_Types-of-components/FunctionBased";
+import ClassBased from "./allTopics/01_Types-of-components/ClassBased";
+import StatesInFBC from "./allTopics/02_States/StatesInFBC";
 import Heart from "./allTopics/02_States/Heart";
 import Toggle from "./allTopics/02_States/Toggle";
 import CounterFBC from "./allTopics/02_States/CounterFBC";
@@ -20,16 +20,22 @@ import Card from "./allTopics/09_ReactCSS/Card";
 import Header from "./Task1/Header";
 import NavBar from "./Task1/NavBar";
 import TodoWrapper from "./allTopics/10_TodoApp/TodoWrapper";
+import UncontrolledForms from "./allTopics/11_UncontrolledForms/UncontrolledForms";
+import LifeCycleInCBC from "./allTopics/12_LifeCycle/LifeCycleInCBC";
+import { useState } from "react";
 
 const App = () => {
-    const username = 'Muskan';
+  const username = "Muskan";
 
-    function greet() {
-        return "Welcome";
-    };
-    return (
-        <>
-            {/* <Navbar />
+  function greet() {
+    return "Welcome";
+  }
+
+  const [toggle, setToggle] = useState(false);
+  const handletOGGLE = () => setToggle((prev) => !prev);
+  return (
+    <>
+      {/* <Navbar />
             <h1>I am App component(Parent)</h1>
             <h2>{greet()} {username}</h2>
             <hr />
@@ -66,7 +72,7 @@ const App = () => {
                     </tr>
                 </tbody>
             </table> */}
-            {/* <FunctionBased />
+      {/* <FunctionBased />
             <ClassBased />
             <StatesInFBC />
             <Heart />
@@ -74,20 +80,23 @@ const App = () => {
             <CounterFBC />
             <StatesInCBC />
             <Parent /> */}
-            {/* <DrillingParent /> */}
-            {/* <CallbackParent /> */}
-            {/* <UpliftingParent /> */}
-            {/* <UserLists /> */}
-            {/* <Employees /> */}
-            {/* <ControlledForms1 />
+      {/* <DrillingParent /> */}
+      {/* <CallbackParent /> */}
+      {/* <UpliftingParent /> */}
+      {/* <UserLists /> */}
+      {/* <Employees /> */}
+      {/* <ControlledForms1 />
             <ControlledForms2 /> */}
-            {/* <InlineCSS /> */}
-            {/* <Card /> */}
-            <Header/>
+      {/* <InlineCSS /> */}
+      {/* <Card /> */}
+      {/* <Header/>
             <NavBar/>
-            <TodoWrapper/>
-            {/* <Footer /> */}
-        </>
-    );
-}
-export default App 
+            <TodoWrapper/> */}
+      {/* <UncontrolledForms/> */}
+      <button onClick={handletOGGLE}>Toggle Me</button>
+      {toggle && <LifeCycleInCBC />}
+      {/* <Footer /> */}
+    </>
+  );
+};
+export default App;
